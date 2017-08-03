@@ -1,7 +1,7 @@
 var searchData=
 [
   ['sdk_20introduction',['SDK Introduction',['../index.html',1,'']]],
-  ['save',['Save',['../structmynteye_1_1_calibration_parameters.html#a24a9f031301ba47163dde4a23d1dd423',1,'mynteye::CalibrationParameters::Save()'],['../structmynteye_1_1_init_parameters.html#a929d0c63990fd4237ac96d9733f05457',1,'mynteye::InitParameters::Save()']]],
+  ['save',['Save',['../structmynteye_1_1_calibration_parameters.html#a00914580777f776d347abb28755655d0',1,'mynteye::CalibrationParameters::Save()'],['../structmynteye_1_1_camera_information.html#a1d54d4b365744808023b484f019c4133',1,'mynteye::CameraInformation::Save()'],['../structmynteye_1_1_init_parameters.html#a929d0c63990fd4237ac96d9733f05457',1,'mynteye::InitParameters::Save()']]],
   ['serial',['serial',['../structmynteye_1_1_camera_information.html#ab80598bcc700a0e501445d56b73a33e9',1,'mynteye::CameraInformation']]],
   ['setdepthmapprocesscallbacks',['SetDepthMapProcessCallbacks',['../classmynteye_1_1_camera.html#a90951f016d51689b5105214e0e0dd017',1,'mynteye::Camera']]],
   ['setgrabprocesscallback',['SetGrabProcessCallback',['../classmynteye_1_1_camera.html#a9889bb23337a2224e50a7f82e4ab1984',1,'mynteye::Camera']]],

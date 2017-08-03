@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MYNT EYE SDK
-   &#160;<span id="projectnumber">v1.0</span>
+   &#160;<span id="projectnumber">v1.1</span>
    </div>
    <div id="projectbrief">https://www.slightech.com/camera</div>
   </td>
@@ -93,6 +93,7 @@ $(document).ready(function(){initNavTree('structmynteye_1_1_camera_information.h
 
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="structmynteye_1_1_camera_information-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -103,6 +104,15 @@ $(document).ready(function(){initNavTree('structmynteye_1_1_camera_information.h
 <p><a class="el" href="classmynteye_1_1_camera.html" title="The main class to use the MYNT EYE camera. ">Camera</a> information.  
  <a href="structmynteye_1_1_camera_information.html#details">More...</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a7cc638fff3f107e75c1e81442dde808d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__enumerations.html#gac366e337c9a6776d37d599076a014d26">ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmynteye_1_1_camera_information.html#a7cc638fff3f107e75c1e81442dde808d">Load</a> (const std::string &amp;filepath)</td></tr>
+<tr class="memdesc:a7cc638fff3f107e75c1e81442dde808d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the camera information from a file.  <a href="#a7cc638fff3f107e75c1e81442dde808d">More...</a><br /></td></tr>
+<tr class="separator:a7cc638fff3f107e75c1e81442dde808d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d54d4b365744808023b484f019c4133"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__enumerations.html#gac366e337c9a6776d37d599076a014d26">ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmynteye_1_1_camera_information.html#a1d54d4b365744808023b484f019c4133">Save</a> (const std::string &amp;filepath)</td></tr>
+<tr class="memdesc:a1d54d4b365744808023b484f019c4133"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the camera information into a file.  <a href="#a1d54d4b365744808023b484f019c4133">More...</a><br /></td></tr>
+<tr class="separator:a1d54d4b365744808023b484f019c4133"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:ab80598bcc700a0e501445d56b73a33e9"><td class="memItemLeft" align="right" valign="top"><a id="ab80598bcc700a0e501445d56b73a33e9"></a>
@@ -132,7 +142,62 @@ uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classmynteye_1_1_camera.html" title="The main class to use the MYNT EYE camera. ">Camera</a> information. </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a7cc638fff3f107e75c1e81442dde808d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cc638fff3f107e75c1e81442dde808d">&#9670;&nbsp;</a></span>Load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__enumerations.html#gac366e337c9a6776d37d599076a014d26">ErrorCode</a> mynteye::CameraInformation::Load </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filepath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Loads the camera information from a file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filepath</td><td>the file path from which the information will be loaded. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__enumerations.html#ggac366e337c9a6776d37d599076a014d26a5655a564f6f24ee95f6946126b920674" title="Standard code for successful behavior. ">SUCCESS</a> if ok, otherwise error. </dd></dl>
+
+</div>
+</div>
+<a id="a1d54d4b365744808023b484f019c4133"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d54d4b365744808023b484f019c4133">&#9670;&nbsp;</a></span>Save()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__enumerations.html#gac366e337c9a6776d37d599076a014d26">ErrorCode</a> mynteye::CameraInformation::Save </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filepath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Saves the camera information into a file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filepath</td><td>the file path in which the information will be stored. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__enumerations.html#ggac366e337c9a6776d37d599076a014d26a5655a564f6f24ee95f6946126b920674" title="Standard code for successful behavior. ">SUCCESS</a> if ok, otherwise error. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

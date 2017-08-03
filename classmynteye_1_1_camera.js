@@ -15,6 +15,7 @@ var classmynteye_1_1_camera =
     [ "GetResolution", "classmynteye_1_1_camera.html#ab62ec8aa076566ef379088b218cf009e", null ],
     [ "Grab", "classmynteye_1_1_camera.html#a622872fc90ff85f405e02158f278aa10", null ],
     [ "IsDepthMapFeatureActivated", "classmynteye_1_1_camera.html#a129c5953744bd830067144bd0bb8f43f", null ],
+    [ "IsFirmwareLatest", "classmynteye_1_1_camera.html#aee9c1355f88e7b83b01742304787e5c0", null ],
     [ "IsOpened", "classmynteye_1_1_camera.html#a14e025063dc7a0a5345518c882cf6523", null ],
     [ "IsPluginActivated", "classmynteye_1_1_camera.html#ae310a9d0d89204857f2a8ed403a7ed56", null ],
     [ "IsPointCloudFeatureActivated", "classmynteye_1_1_camera.html#a71a42f262d26696a39fc9daffd9d93d2", null ],

@@ -8,7 +8,8 @@ var NAVTREE =
       [ "List Functions", "functions_func.html", null ],
       [ "List Variables", "functions_vars.html", null ]
     ] ],
-    [ "Release Notes", "release_notes.html", null ]
+    [ "Release Notes", "release_notes.html", null ],
+    [ "FAQ", "faq.html", null ]
   ] ]
 ];
 

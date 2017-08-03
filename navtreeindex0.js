@@ -10,5 +10,6 @@ var NAVTREEINDEX0 =
 "classes.html":[2,0],
 "functions_func.html":[2,1],
 "functions_vars.html":[2,2],
-"release_notes.html":[3]
+"release_notes.html":[3],
+"faq.html":[4]
 };

@@ -38,6 +38,7 @@ var group__enumerations =
       [ "VIEW_LEFT_UNRECTIFIED", "group__enumerations.html#gga57062eb3c0640960a2021f0031c2f643a4885292fac78473c33df39c09d2d658f", null ],
       [ "VIEW_RIGHT_UNRECTIFIED", "group__enumerations.html#gga57062eb3c0640960a2021f0031c2f643a20101888e8a7418077965905bb04f22b", null ],
       [ "VIEW_DEPTH_MAP", "group__enumerations.html#gga57062eb3c0640960a2021f0031c2f643aa25efc84caa548dd3a62536d040c330a", null ],
+      [ "VIEW_DEPTH_MAP_UNNORMALIZED", "group__enumerations.html#gga57062eb3c0640960a2021f0031c2f643a4cac7f31f9a58cf888b423d849d8dc41", null ],
       [ "VIEW_POINT_CLOUD", "group__enumerations.html#gga57062eb3c0640960a2021f0031c2f643abea3cc81152ce00970b5396ddc1ea204", null ],
       [ "VIEW_LAST", "group__enumerations.html#gga57062eb3c0640960a2021f0031c2f643a6b4a4bae9c5592fdaddafa4c44536079", null ]
     ] ]

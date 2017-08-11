@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MYNT EYE SDK: Namespace Members</title>
+<title>MYNT EYE SDK: 如何升级 MYNT EYE 的固件</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -74,7 +74,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('namespacemembers_enum.html','');});
+$(document).ready(function(){initNavTree('upgrade_firmware_zh-hans.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -91,25 +91,48 @@ $(document).ready(function(){initNavTree('namespacemembers_enum.html','');});
 </iframe>
 </div>
 
+<div class="header">
+  <div class="headertitle">
+<div class="title">如何升级 MYNT EYE 的固件 </div>  </div>
+</div><!--header-->
 <div class="contents">
-&#160;<ul>
-<li>ErrorCode
-: <a class="el" href="group__enumerations.html#gac366e337c9a6776d37d599076a014d26">mynteye</a>
-</li>
-<li>Gravity
-: <a class="el" href="group__enumerations.html#ga4d1c4c02cb7ae5d5668c1e12fe1a6689">mynteye</a>
-</li>
-<li>Mode
-: <a class="el" href="group__enumerations.html#ga4cdd7291a2eef75708dd0ba9ae28ed9e">mynteye</a>
-</li>
-<li>Process
-: <a class="el" href="group__enumerations.html#ga0dea167e5d5d642c7fe391c7b9915504">mynteye</a>
-</li>
-<li>View
-: <a class="el" href="group__enumerations.html#ga57062eb3c0640960a2021f0031c2f643">mynteye</a>
-</li>
+<div class="textblock"><h2>固件升级应用说明</h2>
+<p>应用安装包：<a href="https://github.com/slightech/MYNT-EYE-SDK/blob/master/firmware/setup.exe">setup.exe</a>。</p>
+<ol type="1">
+<li>该应用为 MYNT EYE 专用，主要用于升级固件。也可以预览图像及 IMU 数据。</li>
+<li>该应用仅适用于 Windows 7、Windows 8、Windows 10。</li>
+<li>部分电脑如果没有安装某些 VS 运行库将无法显示图像（但不影响升级固件和预览 IMU 数据）。<ul>
+<li>下载安装常用 VS 运行库合集或能解决该问题，参考<a href="http://www.downxia.com/downinfo/29834.html">这里</a>。</li>
 </ul>
-</div><!-- contents -->
+</li>
+</ol>
+<h2>固件升级操作步骤</h2>
+<ol type="1">
+<li>将 MYNT EYE 插入 USB 3.0 口，然后打开应用。</li>
+<li>点击菜单栏的 Options ，选择 FirmwareUpdate ，会弹出升级窗口。</li>
+<li>在升级窗口里，确认 Device 选中为 MYNTEYE 。然后点击右侧的 Update ，选择我们提供的 mynteye_*.img 进行升级。<ul>
+<li>升级过程中请勿拔插 MYNT EYE 。</li>
+<li>升级状态显示在 Status ，完成后提示“Program Succeeded, disconnect the camera”。</li>
+</ul>
+</li>
+<li>固件升级完成后，请重插拔 MYNT EYE 再使用。<ul>
+<li>MYNT EYE 固件升级后初次使用，请保持其静置在桌面 6 秒。原因如下：</li>
+<li>MYNT EYE 初次工作会有一个 IMU 零漂补偿过程。你可以重开该应用，在左下方能看到 IMU 数据变动。</li>
+</ul>
+</li>
+</ol>
+<p>其他说明：</p>
+<ol type="1">
+<li>在升级窗口里，如果 Device 不是 MYNTEYE ，而是“Cypress FX3 USB BootLoader Device”，一样可以点击右侧的 Update 进行升级。</li>
+<li>在升级窗口里，如果点击了右侧的 Erase ，擦除了固件，你需要重开该应用。再次进入升级窗口后，你可以看到 Device 为“Cypress FX3 USB BootLoader Device”，继续点击右侧的 Update 进行升级。</li>
+<li>如果 Erase 后再次进入升级窗口时，Device 名称不是“Cypress FX3 USB BootLoader Device”或找不到，说明你需要手动安装驱动。步骤如下：<ul>
+<li>打开系统的设备管理器，找到名称为“WestBridge_driver”的设备，然后右键更新驱动。</li>
+<li>选择“&lt;应用安装目录&gt;/WestBridge_driver”路径下，相应系统文件夹（win7以上选择wlh）下 x86/x64 （根据系统位数选择）内的驱动文件进行安装。</li>
+<li>驱动安装成功之后，刷新设备管理器，将找到“Cypress FX3 USB BootLoader Device”。如果失败，请尝试重插拔摄像头。 </li>
+</ul>
+</li>
+</ol>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

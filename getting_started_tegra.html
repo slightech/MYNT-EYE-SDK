@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MYNT EYE SDK: SDK Introduction</title>
+<title>MYNT EYE SDK: Getting Started on Tegra (TX1, TX2)</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -23,6 +23,7 @@
   $(document).ready(function() { init_search(); });
 </script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MYNT EYE SDK
-   &#160;<span id="projectnumber">v0.1</span>
+   &#160;<span id="projectnumber">v1.2</span>
    </div>
    <div id="projectbrief">https://www.slightech.com/camera</div>
   </td>
@@ -73,7 +74,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('sdk_introduction.html','');});
+$(document).ready(function(){initNavTree('getting_started_tegra.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -92,39 +93,20 @@ $(document).ready(function(){initNavTree('sdk_introduction.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">SDK Introduction </div>  </div>
+<div class="title">Getting Started on Tegra (TX1, TX2) </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><div class="image">
-<img src="sdk_introduction.png" alt="sdk_introduction.png"/>
-<div class="caption">
-SDK Structure</div></div>
- <h2>SDK Files</h2>
-<p>The SDK is installed by default at the following location:</p>
-<ul>
-<li>on Windows at C:/Program Files (x86)/MYNT EYE SDK</li>
-<li>on Linux at /usr/local/mynteye</li>
-</ul>
-<p>It falls into the following directories:</p>
-<ul>
-<li>apps/ contains binary executables of some MYNT EYE camera apps.</li>
-<li>bin/ (Windows only) contains the windows DLLs required to use the SDK</li>
-<li>deps/ (Windows only) contains samples and SDK (OpenCV,Eigen...) dependencies</li>
-<li>doc/ contains documentations and licence<ul>
-<li>api/ contains the API documentation on Web format</li>
-<li>license/ contains the licenses of the SDK and its third-parties</li>
-</ul>
-</li>
-<li>firmware/ contains all firmware version for the MYNT EYE camera (*.bin files)</li>
-<li>include/ contains C/C++ header files</li>
-<li>lib/ contains the libraries files required to link with the SDK (".lib" on Windows and ".so" on Linux)</li>
-<li>plugin/ contains the MYNT EYE SDK plugins of some major programs</li>
-<li>samples/ contains sample programs using the SDK</li>
-<li>settings/ (Linux only) contains MYNT EYE camera parameters</li>
-<li>tools/ contains binary executables included in the SDK that configure and manage the MYNT EYE camera</li>
-<li>scripts (Jetson)/ contains performance scripts to be activated for best performances </li>
-</ul>
-</div></div><!-- contents -->
+<div class="textblock"><blockquote class="doxtable">
+<p>Note: no apps </p>
+</blockquote>
+<h2>Install <a href="https://developer.nvidia.com/embedded/jetpack">JetPack</a></h2>
+<p>Download and install <a href="https://developer.nvidia.com/embedded/jetpack">JetPack</a>, please follow this <a href="http://docs.nvidia.com/jetpack-l4t/index.html#developertools/mobile/jetpack/l4t/3.1/jetpack_l4t_install.htm">Install Guide</a>.</p>
+<div class="fragment"><div class="line"># On the host machine running Ubuntu, create a new directory to store installation packages.</div><div class="line">$ mkdir JetPack</div><div class="line">$ cd JetPack/</div><div class="line"></div><div class="line"># Download JetPack-${VERSION}.run into the new directory on the host Ubuntu machine.</div><div class="line">$ chmod a+x ./JetPack-L4T-3.1-linux-x64.run</div></div><!-- fragment --><h3>Prerequisites</h3>
+<div class="fragment"><div class="line"># Install build tools</div><div class="line">$ sudo apt-get install build-essential cmake git</div><div class="line"></div><div class="line"># Install ssl for https, v4l for video</div><div class="line">$ sudo apt-get install libssl-dev libv4l-dev</div></div><!-- fragment --><h3>Install SDK</h3>
+<div class="fragment"><div class="line">$ cd mynteye-&lt;version&gt;-tegra-aarch64-gcc5/</div><div class="line">$ ./install.sh</div><div class="line">$ source ~/.bashrc</div></div><!-- fragment --><h2>Build SDK Samples</h2>
+<div class="fragment"><div class="line">$ cd samples/</div><div class="line">$ mkdir build</div><div class="line">$ cd build/</div><div class="line">$ cmake -DCMAKE_BUILD_TYPE=Release ..</div><div class="line">$ make</div></div><!-- fragment --><p>About SDK samples' introductions, please see "samples/README.md".</p>
+<h2>Open SDK Documentations</h2>
+<div class="fragment"><div class="line">$ xdg-open doc/api/html/index.html</div></div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

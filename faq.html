@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MYNT EYE SDK
-   &#160;<span id="projectnumber">v1.1</span>
+   &#160;<span id="projectnumber">v1.2</span>
    </div>
    <div id="projectbrief">https://www.slightech.com/camera</div>
   </td>
@@ -96,19 +96,12 @@ $(document).ready(function(){initNavTree('faq.html','');});
 <div class="title">FAQ </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2>Running apps in SDK (Previewer, etc.) doesn't detect the CUDA runtime correctly?</h2>
-<p>You could run apps directly in Terminal like this:</p>
-<div class="fragment"><div class="line"># Linux</div><div class="line">$ ./apps/Previewer</div><div class="line"></div><div class="line"># macOS</div><div class="line">$ ./apps/Previewer.app/Contents/MacOS/Previewer</div></div><!-- fragment --><p>And confirm "Detect CUDA support" or not.</p>
-<p>However, run apps in Terminal is not the same as run them through click to start. You should not export the library search paths as follows:</p>
-<div class="fragment"><div class="line"># Linux</div><div class="line">$ vi ~/.bashrc</div><div class="line">export CUDA_HOME=/usr/local/cuda-8.0</div><div class="line">export PATH=$CUDA_HOME/bin:$PATH</div><div class="line">export LD_LIBRARY_PATH=$CUDA_HOME/lib64:$LD_LIBRARY_PATH</div><div class="line"></div><div class="line"># macOS</div><div class="line">$ vi ~/.bash_profile</div><div class="line">export PATH=/usr/local/cuda-8.0/bin:$PATH</div><div class="line">export PATH=$CUDA_HOME/bin:$PATH</div><div class="line">export DYLD_LIBRARY_PATH=$CUDA_HOME/lib:$DYLD_LIBRARY_PATH</div></div><!-- fragment --><p>Otherwise, it may "Detect CUDA support" when run in Terminal, but "Detect CUDA not support" when click to start. Because when click to start apps, they won't know the search paths that you added for Terminal.</p>
-<p>To ensure the apps could detect the CUDA runtime correctly, you should add library search paths to system.</p>
-<p>On Linux, add the paths to "/etc/ld.so.conf":</p>
-<div class="fragment"><div class="line"># Add library directory at end: /usr/local/cuda-8.0/lib64</div><div class="line">$ sudo vi /etc/ld.so.conf</div><div class="line"></div><div class="line"># Rebuild the cache</div><div class="line">$ sudo ldconfig</div><div class="line"></div><div class="line"># Check if library directory in cache</div><div class="line">$ ldconfig -p | grep cuda</div></div><!-- fragment --><p>On macOS, link the CUDA libs to "/usr/local/lib":</p>
-<div class="fragment"><div class="line">$ CUDA_LIBPATH=/usr/local/cuda/lib; \</div><div class="line">for lib in libcuda.dylib libnppc.dylib libnppi.dylib; do \</div><div class="line">    libpath=&quot;$CUDA_LIBPATH/$lib&quot;; \</div><div class="line">    if [ -e &quot;$libpath&quot; ]; then \</div><div class="line">        ln -fhs &quot;$libpath&quot; &quot;/usr/local/lib&quot;; \</div><div class="line">    fi \</div><div class="line">done</div></div><!-- fragment --><h2>Running apps or samples crashes due to the CUDA driver is not proper.</h2>
+<div class="textblock"><h2>1) How to run apps directly in Terminal/Command Prompt?</h2>
+<div class="fragment"><div class="line"># Linux</div><div class="line">$ ./apps/Previewer</div><div class="line"></div><div class="line"># macOS</div><div class="line">$ ./apps/Previewer.app/Contents/MacOS/Previewer</div><div class="line"></div><div class="line"># Windows</div><div class="line">&gt; .\apps\Previewer.exe</div></div><!-- fragment --><h2>2) Running apps or samples crashes due to the CUDA driver is not proper.</h2>
 <p>If you run <code>./apps/Previewer</code> or <code>./samples/bin/camera2 &lt;index&gt;</code> crashes and see this information: </p><pre class="fragment">CUDA Error: CUDA driver version is insufficient for CUDA runtime version
 </pre><p>It seems that your CUDA driver is not proper for CUDA runtime.</p>
 <p>You could select to install CUDA driver when install <a href="https://developer.nvidia.com/cuda-downloads">CUDA Toolkit</a>.</p>
-<h2>Install the NVIDIA display driver failed on Ubuntu.</h2>
+<h2>3) Install the NVIDIA display driver failed on Ubuntu.</h2>
 <p>If you install the NVIDIA display driver failed like these: </p><pre class="fragment">Installing the NVIDIA display driver...
 It appears that an X server is running. Please exit X before installation. If you're sure that X is not running, but are getting this error, please delete any X lock files in /tmp.
 ...
@@ -119,13 +112,24 @@ A system reboot is required to continue installation. Please reboot then run the
 Driver:   Reboot required to continue
 </pre><p>You could install the driver as follows:</p>
 <div class="fragment"><div class="line">$ sudo apt-cache search nvidia-</div><div class="line">$ sudo apt-get install nvidia-375</div><div class="line">$ sudo reboot</div></div><!-- fragment --><p>Or, see this: <a href="https://askubuntu.com/questions/799184/how-can-i-install-cuda-on-ubuntu-16-04">How can I install CUDA on Ubuntu 16.04?</a>.</p>
-<h2>What is "Warning: Failed to get the camera's infomation"?</h2>
+<h2>4) Running apps in SDK (Previewer, etc.) doesn't detect the CUDA runtime correctly?</h2>
+<p>You could run apps directly in Terminal, and confirm "Detect CUDA support" or not by the output message.</p>
+<p>However, run apps in Terminal is not the same as run them through click to start. You should not export the library search paths as follows:</p>
+<div class="fragment"><div class="line"># Linux</div><div class="line">$ vi ~/.bashrc</div><div class="line">export CUDA_HOME=/usr/local/cuda-8.0</div><div class="line">export PATH=$CUDA_HOME/bin:$PATH</div><div class="line">export LD_LIBRARY_PATH=$CUDA_HOME/lib64:$LD_LIBRARY_PATH</div><div class="line"></div><div class="line"># macOS</div><div class="line">$ vi ~/.bash_profile</div><div class="line">export PATH=/usr/local/cuda-8.0/bin:$PATH</div><div class="line">export PATH=$CUDA_HOME/bin:$PATH</div><div class="line">export DYLD_LIBRARY_PATH=$CUDA_HOME/lib:$DYLD_LIBRARY_PATH</div></div><!-- fragment --><p>Otherwise, it may "Detect CUDA support" when run in Terminal, but "Detect CUDA not support" when click to start. Because when click to start apps, they won't know the search paths that you added for Terminal.</p>
+<p>To ensure the apps could detect the CUDA runtime correctly, you should add library search paths to system.</p>
+<p>On Linux, add the paths to "/etc/ld.so.conf":</p>
+<div class="fragment"><div class="line"># Add library directory at end: /usr/local/cuda-8.0/lib64</div><div class="line">$ sudo vi /etc/ld.so.conf</div><div class="line"></div><div class="line"># Rebuild the cache</div><div class="line">$ sudo ldconfig</div><div class="line"></div><div class="line"># Check if library directory in cache</div><div class="line">$ ldconfig -p | grep cuda</div></div><!-- fragment --><p>On macOS, link the CUDA libs to "/usr/local/lib":</p>
+<div class="fragment"><div class="line">$ CUDA_LIBPATH=/usr/local/cuda/lib; \</div><div class="line">for lib in libcuda.dylib libnppc.dylib libnppi.dylib; do \</div><div class="line">    libpath=&quot;$CUDA_LIBPATH/$lib&quot;; \</div><div class="line">    if [ -e &quot;$libpath&quot; ]; then \</div><div class="line">        ln -fhs &quot;$libpath&quot; &quot;/usr/local/lib&quot;; \</div><div class="line">    fi \</div><div class="line">done</div></div><!-- fragment --><h2>5) What is "Warning: Failed to get the camera's infomation"?</h2>
 <p>On Windows, if you run a executable using SDK when you has plugged the camera for a while, you may see the following warning: </p><pre class="fragment">Warning: Failed to get the camera's infomation.
 Warning: sn is empty.
 </pre><p>Then, the SDK will fetch a default calibration file to "settings/SN.conf" and continue processing. Thus, it will lead to bad depthmap because of the unmatched calibration parameters.</p>
 <p>You could replug the camera and run any executable using SDK to solve it.</p>
 <p>The reason is the camera will be in low power state on Windows when you has plugged the camera for a while. And the SDK can not get the camera's infomation in this state.</p>
-<p>About the camera infomation, the SDK will cache it to a temporary file "setting/mynteye.info.temp" once you got it. When you failed to get the infomation, the SDK will read it from the temporary file if exists. Besides, you could create a file "setting/mynteye.info" to specify the camera infomation. </p>
+<p>About the camera infomation, the SDK will cache it to a temporary file "setting/mynteye.info.temp" once you got it. When you failed to get the infomation, the SDK will read it from the temporary file if exists. Besides, you could create a file "setting/mynteye.info" to specify the camera infomation.</p>
+<h1>Known Issues</h1>
+<h2>1) Open MYNT EYE camera failed on macOS.</h2>
+<p>It may hang when open the camera, after you open and close it several times on macOS.</p>
+<p>Reconnecting the MYNT EYE camera will solve this issue. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

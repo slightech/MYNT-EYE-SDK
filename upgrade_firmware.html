@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MYNT EYE SDK: Namespace Members</title>
+<title>MYNT EYE SDK: How to upgrade firmware</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -74,7 +74,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('namespacemembers_enum.html','');});
+$(document).ready(function(){initNavTree('upgrade_firmware.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -91,25 +91,48 @@ $(document).ready(function(){initNavTree('namespacemembers_enum.html','');});
 </iframe>
 </div>
 
+<div class="header">
+  <div class="headertitle">
+<div class="title">How to upgrade firmware </div>  </div>
+</div><!--header-->
 <div class="contents">
-&#160;<ul>
-<li>ErrorCode
-: <a class="el" href="group__enumerations.html#gac366e337c9a6776d37d599076a014d26">mynteye</a>
-</li>
-<li>Gravity
-: <a class="el" href="group__enumerations.html#ga4d1c4c02cb7ae5d5668c1e12fe1a6689">mynteye</a>
-</li>
-<li>Mode
-: <a class="el" href="group__enumerations.html#ga4cdd7291a2eef75708dd0ba9ae28ed9e">mynteye</a>
-</li>
-<li>Process
-: <a class="el" href="group__enumerations.html#ga0dea167e5d5d642c7fe391c7b9915504">mynteye</a>
-</li>
-<li>View
-: <a class="el" href="group__enumerations.html#ga57062eb3c0640960a2021f0031c2f643">mynteye</a>
-</li>
+<div class="textblock"><h2>Application Introduction</h2>
+<p>Application Package: <a href="https://github.com/slightech/MYNT-EYE-SDK/blob/master/firmware/setup.exe">setup.exe</a>.</p>
+<ol type="1">
+<li>This application is dedicated to MYNT EYE and is used usually for upgrading firmware. You can also use it to preview images and IMU data.</li>
+<li>This application is only available on Windows 7, Windows 8 and Windows 10.</li>
+<li>This application may not be able to preview images on the computers which don't have some VS runtime libraries. However, upgrading firmware still works.<ul>
+<li>You can install the common VS runtime libraries to solve it, see <a href="http://www.downxia.com/downinfo/29834.html">here</a>.</li>
 </ul>
-</div><!-- contents -->
+</li>
+</ol>
+<h2>Firmware Upgrade Instructions</h2>
+<ol type="1">
+<li>Plug the MYNT EYE camera in a USB 3.0 port, then open the application.</li>
+<li>Click "Options" on menu bar, and select "FirmwareUpdate". And a upgrade window will pop up.</li>
+<li>On the upgrade window, confirm "Device" is selected as "MYNTEYE". Then click "Update" on right side, and select the "mynteye_*.img" we offerred to upgrade.<ul>
+<li>During upgrading, do not disconnect the MYNT EYE camera.</li>
+<li>On upgrade window, "Status" shows the message. After done, the message will be "Program Succeeded, disconnect the camera".</li>
+</ul>
+</li>
+<li>After a firmware is upgraded, please replug the MYNT EYE camera.<ul>
+<li>Before using MYNT EYE for the first time after upgraded, please keep it stable on the table for 6 seconds. The reason is that:</li>
+<li>When MYNT EYE works for the first time, there is a IMU zero drift compensation process. You can reopen the application and see IMU data changes at the bottom-left of the application interface.</li>
+</ul>
+</li>
+</ol>
+<p>Other Instructions:</p>
+<ol type="1">
+<li>On the upgrade window, if "Device" is "Cypress FX3 USB BootLoader Device" instead of "MYNTEYE", you can also click "Update" on right side to upgrade.</li>
+<li>On the upgrade window, if you click "Erase" on right side and erase the firmware, you need to reopen the application. After entering the upgrade window again, you will see "Device" is "Cypress FX3 USB BootLoader Device", then click "Update" on right side to upgrade.</li>
+<li>After entering the upgrade window again, if "Device" is not "Cypress FX3 USB BootLoader Device" or is not found, you need manually install the driver. The steps are as follows:<ul>
+<li>Open "Device Manager" in Windows, find the device named "WestBridge_driver", and right click it to update the driver.</li>
+<li>Go to "&lt;Installation Directory&gt;/WestBridge_driver", select the folder corresponding to current system (win7 above select "wlh"), select "x86" or "x64" corresponding to the bits, finally select the driver to upgrade.</li>
+<li>After the driver is installed, refresh the "Device Manager". You will find "Cypress FX3 USB BootLoader Device" now. If it fails, try to replug the camera. </li>
+</ul>
+</li>
+</ol>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

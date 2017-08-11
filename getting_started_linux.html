@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MYNT EYE SDK
-   &#160;<span id="projectnumber">v1.1</span>
+   &#160;<span id="projectnumber">v1.2</span>
    </div>
    <div id="projectbrief">https://www.slightech.com/camera</div>
   </td>
@@ -110,8 +110,9 @@ $(document).ready(function(){initNavTree('getting_started_linux.html','');});
 <div class="fragment"><div class="line">$ cd mynteye-&lt;version&gt;-linux-x64-&lt;gcc&gt;/</div><div class="line">$ ./install.sh</div><div class="line">$ source ~/.bashrc</div></div><!-- fragment --><p>If your OpenCV or CUDA is installed in a different path, before running <code>./install.sh</code>, you could change the following variables in <code>./install.sh</code>: </p><pre class="fragment">RPATH_CUDA=/usr/local/cuda/lib64
 RPATH_OPENCV=/usr/local/lib
 </pre><h2>Build SDK Samples</h2>
-<div class="fragment"><div class="line">$ cd samples/</div><div class="line">$ mkdir build</div><div class="line">$ cd build/</div><div class="line">$ cmake -DCMAKE_BUILD_TYPE=Release ..</div><div class="line">$ make</div></div><!-- fragment --><p>About SDK samples' introductions, please see "samples/README.md". </p>
-</div></div><!-- contents -->
+<div class="fragment"><div class="line">$ cd samples/</div><div class="line">$ mkdir build</div><div class="line">$ cd build/</div><div class="line">$ cmake -DCMAKE_BUILD_TYPE=Release ..</div><div class="line">$ make</div></div><!-- fragment --><p>About SDK samples' introductions, please see "samples/README.md".</p>
+<h2>Open SDK Documentations</h2>
+<div class="fragment"><div class="line">$ xdg-open doc/api/html/index.html</div></div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

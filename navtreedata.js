@@ -3,13 +3,14 @@ var NAVTREE =
   [ "MYNT EYE SDK", "index.html", [
     [ "SDK Introduction", "index.html", null ],
     [ "Getting Started", "getting_started.html", "getting_started" ],
+    [ "Tutorials", "tutorials.html", "tutorials" ],
     [ "API Documentation", "annotated.html", [
       [ "List Classes", "classes.html", null ],
       [ "List Functions", "functions_func.html", null ],
       [ "List Variables", "functions_vars.html", null ]
     ] ],
-    [ "Release Notes", "release_notes.html", null ],
-    [ "FAQ", "faq.html", null ]
+    [ "FAQ & Issues", "faq.html", null ],
+    [ "Release Notes", "release_notes.html", null ]
   ] ]
 ];
 

@@ -1,6 +1,7 @@
 var searchData=
 [
   ['view_5fdepth_5fmap',['VIEW_DEPTH_MAP',['../group__enumerations.html#gga57062eb3c0640960a2021f0031c2f643aa25efc84caa548dd3a62536d040c330a',1,'mynteye']]],
+  ['view_5fdepth_5fmap_5funnormalized',['VIEW_DEPTH_MAP_UNNORMALIZED',['../group__enumerations.html#gga57062eb3c0640960a2021f0031c2f643a4cac7f31f9a58cf888b423d849d8dc41',1,'mynteye']]],
   ['view_5flast',['VIEW_LAST',['../group__enumerations.html#gga57062eb3c0640960a2021f0031c2f643a6b4a4bae9c5592fdaddafa4c44536079',1,'mynteye']]],
   ['view_5fleft',['VIEW_LEFT',['../group__enumerations.html#gga57062eb3c0640960a2021f0031c2f643adfc5ccf8d2e121b7bb022c6eaa6f9c69',1,'mynteye']]],
   ['view_5fleft_5funrectified',['VIEW_LEFT_UNRECTIFIED',['../group__enumerations.html#gga57062eb3c0640960a2021f0031c2f643a4885292fac78473c33df39c09d2d658f',1,'mynteye']]],

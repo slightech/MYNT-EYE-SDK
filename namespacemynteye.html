@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MYNT EYE SDK
-   &#160;<span id="projectnumber">v1.2</span>
+   &#160;<span id="projectnumber">v1.3</span>
    </div>
    <div id="projectbrief">https://www.slightech.com/camera</div>
   </td>
@@ -130,15 +130,25 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:ad8682ac8ad261369fc1ed2b795569809"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemynteye.html#ad8682ac8ad261369fc1ed2b795569809">ErrorCallback</a> = std::function&lt; void(const <a class="el" href="group__enumerations.html#gac366e337c9a6776d37d599076a014d26">ErrorCode</a> &amp;code)&gt;</td></tr>
+<tr class="memdesc:ad8682ac8ad261369fc1ed2b795569809"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error callback.  <a href="#ad8682ac8ad261369fc1ed2b795569809">More...</a><br /></td></tr>
+<tr class="separator:ad8682ac8ad261369fc1ed2b795569809"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83e9447c7476e1122684b3953b072565"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemynteye.html#a83e9447c7476e1122684b3953b072565">ProcessCallback</a> = std::function&lt; void(cv::Mat &amp;image)&gt;</td></tr>
 <tr class="memdesc:a83e9447c7476e1122684b3953b072565"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process feature callback with one image.  <a href="#a83e9447c7476e1122684b3953b072565">More...</a><br /></td></tr>
 <tr class="separator:a83e9447c7476e1122684b3953b072565"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36ca784ca84bbc68f27e950673072f4a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemynteye.html#a36ca784ca84bbc68f27e950673072f4a">ProcessCallback2</a> = std::function&lt; void(cv::Mat &amp;left, cv::Mat &amp;right)&gt;</td></tr>
 <tr class="memdesc:a36ca784ca84bbc68f27e950673072f4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process feature callback with two images.  <a href="#a36ca784ca84bbc68f27e950673072f4a">More...</a><br /></td></tr>
 <tr class="separator:a36ca784ca84bbc68f27e950673072f4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfc90a615ea5eb3a135e42dba23c1242"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemynteye.html#abfc90a615ea5eb3a135e42dba23c1242">GrabProcessCallback</a> = <a class="el" href="namespacemynteye.html#a36ca784ca84bbc68f27e950673072f4a">ProcessCallback2</a></td></tr>
-<tr class="memdesc:abfc90a615ea5eb3a135e42dba23c1242"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pre process grabbed images callback.  <a href="#abfc90a615ea5eb3a135e42dba23c1242">More...</a><br /></td></tr>
-<tr class="separator:abfc90a615ea5eb3a135e42dba23c1242"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7244a4eeee91436d783fe6141961ed91"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemynteye.html#a7244a4eeee91436d783fe6141961ed91">GrabErrorCallback</a> = <a class="el" href="namespacemynteye.html#ad8682ac8ad261369fc1ed2b795569809">ErrorCallback</a></td></tr>
+<tr class="memdesc:a7244a4eeee91436d783fe6141961ed91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grab error callback.  <a href="#a7244a4eeee91436d783fe6141961ed91">More...</a><br /></td></tr>
+<tr class="separator:a7244a4eeee91436d783fe6141961ed91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65c412fe23d71db0e57df3501f2765c1"><td class="memItemLeft" align="right" valign="top"><a id="a65c412fe23d71db0e57df3501f2765c1"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemynteye.html#a65c412fe23d71db0e57df3501f2765c1">GrabPreProcessCallback</a> = std::function&lt; void()&gt;</td></tr>
+<tr class="memdesc:a65c412fe23d71db0e57df3501f2765c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pre process grab callback. <br /></td></tr>
+<tr class="separator:a65c412fe23d71db0e57df3501f2765c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13ebbf86825c92056a8e91143839422b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemynteye.html#a13ebbf86825c92056a8e91143839422b">GrabPostProcessCallback</a> = <a class="el" href="namespacemynteye.html#a36ca784ca84bbc68f27e950673072f4a">ProcessCallback2</a></td></tr>
+<tr class="memdesc:a13ebbf86825c92056a8e91143839422b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Post process grab callback.  <a href="#a13ebbf86825c92056a8e91143839422b">More...</a><br /></td></tr>
+<tr class="separator:a13ebbf86825c92056a8e91143839422b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1dd2d9acf29ba5e7f13a5ab12bf51732"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemynteye.html#a1dd2d9acf29ba5e7f13a5ab12bf51732">RectifyPreProcessCallback</a> = <a class="el" href="namespacemynteye.html#a36ca784ca84bbc68f27e950673072f4a">ProcessCallback2</a></td></tr>
 <tr class="memdesc:a1dd2d9acf29ba5e7f13a5ab12bf51732"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pre process rectification callback.  <a href="#a1dd2d9acf29ba5e7f13a5ab12bf51732">More...</a><br /></td></tr>
 <tr class="separator:a1dd2d9acf29ba5e7f13a5ab12bf51732"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -269,19 +279,57 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
-<a id="abfc90a615ea5eb3a135e42dba23c1242"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abfc90a615ea5eb3a135e42dba23c1242">&#9670;&nbsp;</a></span>GrabProcessCallback</h2>
+<a id="ad8682ac8ad261369fc1ed2b795569809"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8682ac8ad261369fc1ed2b795569809">&#9670;&nbsp;</a></span>ErrorCallback</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespacemynteye.html#abfc90a615ea5eb3a135e42dba23c1242">mynteye::GrabProcessCallback</a> = typedef <a class="el" href="namespacemynteye.html#a36ca784ca84bbc68f27e950673072f4a">ProcessCallback2</a></td>
+          <td class="memname">using <a class="el" href="namespacemynteye.html#ad8682ac8ad261369fc1ed2b795569809">mynteye::ErrorCallback</a> = typedef std::function&lt;void(const <a class="el" href="group__enumerations.html#gac366e337c9a6776d37d599076a014d26">ErrorCode</a> &amp;code)&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Pre process grabbed images callback. </p>
+<p>Error callback. </p>
+
+</div>
+</div>
+<a id="a7244a4eeee91436d783fe6141961ed91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7244a4eeee91436d783fe6141961ed91">&#9670;&nbsp;</a></span>GrabErrorCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacemynteye.html#a7244a4eeee91436d783fe6141961ed91">mynteye::GrabErrorCallback</a> = typedef <a class="el" href="namespacemynteye.html#ad8682ac8ad261369fc1ed2b795569809">ErrorCallback</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Grab error callback. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">code</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a13ebbf86825c92056a8e91143839422b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13ebbf86825c92056a8e91143839422b">&#9670;&nbsp;</a></span>GrabPostProcessCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacemynteye.html#a13ebbf86825c92056a8e91143839422b">mynteye::GrabPostProcessCallback</a> = typedef <a class="el" href="namespacemynteye.html#a36ca784ca84bbc68f27e950673072f4a">ProcessCallback2</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Post process grab callback. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">left_raw</td><td></td></tr>

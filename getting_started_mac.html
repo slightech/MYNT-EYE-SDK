@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MYNT EYE SDK
-   &#160;<span id="projectnumber">v1.2</span>
+   &#160;<span id="projectnumber">v1.3</span>
    </div>
    <div id="projectbrief">https://www.slightech.com/camera</div>
   </td>
@@ -113,10 +113,17 @@ $(document).ready(function(){initNavTree('getting_started_mac.html','');});
 OPENCV_LIBDIR=/usr/local/lib
 export DYLD_LIBRARY_PATH=$CUDA_LIBDIR:$DYLD_LIBRARY_PATH
 export DYLD_LIBRARY_PATH=$OPENCV_LIBDIR:$DYLD_LIBRARY_PATH
-</pre><h2>Build SDK Samples</h2>
-<div class="fragment"><div class="line">$ cd samples/</div><div class="line">$ mkdir build</div><div class="line">$ cd build/</div><div class="line">$ cmake -DCMAKE_BUILD_TYPE=Release ..</div><div class="line">$ make</div></div><!-- fragment --><p>About SDK samples' introductions, please see "samples/README.md".</p>
-<h2>Open SDK Documentations</h2>
-<div class="fragment"><div class="line">$ open doc/api/html/index.html</div></div><!-- fragment --> </div></div><!-- contents -->
+</pre><h2>Check Installation</h2>
+<p>After <code>./install.sh</code>, you could check the environment variables:</p>
+<div class="fragment"><div class="line">$ echo $MYNTEYE_SDK_ROOT</div><div class="line">&lt;Should be the sdk path&gt;</div></div><!-- fragment --><h2>Build SDK Samples</h2>
+<div class="fragment"><div class="line">$ cd samples/</div><div class="line">$ mkdir build</div><div class="line">$ cd build/</div><div class="line">$ cmake -DCMAKE_BUILD_TYPE=Release ..</div><div class="line">$ make</div></div><!-- fragment --><p>Then you could run the sample like this:</p>
+<div class="fragment"><div class="line">$ ./samples/bin/camera [name]</div></div><!-- fragment --><p>Please see "samples/README.md" to learn more about the samples.</p>
+<h2>About SDK Tools</h2>
+<p>Please see "tools/README.md".</p>
+<h2>Open SDK Documentation</h2>
+<div class="fragment"><div class="line">$ open doc/api/html/index.html</div></div><!-- fragment --><h2>FAQ</h2>
+<p>If have issues when installing, you could make an attempt to find it in <a href="https://slightech.github.io/MYNT-EYE-SDK/faq.html">FAQ</a>. </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

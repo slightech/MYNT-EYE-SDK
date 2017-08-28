@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MYNT EYE SDK
-   &#160;<span id="projectnumber">v1.2</span>
+   &#160;<span id="projectnumber">v1.3</span>
    </div>
    <div id="projectbrief">https://www.slightech.com/camera</div>
   </td>
@@ -104,7 +104,23 @@ $(document).ready(function(){initNavTree('getting_started_win.html','');});
 </ul>
 <h2>Install SDK</h2>
 <p>Run "Command Prompt (cmd)" as administrator, then:</p>
-<div class="fragment"><div class="line">&gt; cd mynteye-&lt;version&gt;-win-x64</div><div class="line">&gt; install.bat</div></div><!-- fragment --><h2>Build SDK Samples</h2>
+<div class="fragment"><div class="line">&gt; cd mynteye-&lt;version&gt;-win-x64</div><div class="line">&gt; install.bat</div></div><!-- fragment --><blockquote class="doxtable">
+<p>Note: Must open a new "Command Prompt (cmd)" as administrator, then execute <code>install.bat</code> to setup SDK. Otherwise, the environment variables won't be correct. Besides, you'd better reopen a "Command Prompt (cmd)" to "Check Installation" and "Build SDK Samples". </p>
+</blockquote>
+<h2>Check Installation</h2>
+<p>After <code>install.bat</code>, you could check the following environment variables in system:</p>
+<ul>
+<li>MYNTEYE_SDK_ROOT=&lt;Should be the sdk path&gt;</li>
+<li>MYNTEYE_SDK_PATH=&lt;sdk&gt;\bin;&lt;sdk&gt;\bin\3rdparty;&lt;sdk&gt;\apps;&lt;sdk&gt;\apps\3rdparty;&lt;sdk&gt;\deps\opencv\x64\vc14\bin</li>
+<li>PATH=MYNTEYE_SDK_PATH%;..<ul>
+<li><code>PATH</code> should have <code>MYNTEYE_SDK_PATH%</code> for searching the libraries.</li>
+</ul>
+</li>
+</ul>
+<blockquote class="doxtable">
+<p>If dll not found, you could reboot your computer to ensure PATH takes effect. As we know, it must be reboot on Windows 7. </p>
+</blockquote>
+<h2>Build SDK Samples</h2>
 <h3>Prerequisites</h3>
 <p><b>Windows Development Kits:</b></p>
 <ul>
@@ -120,10 +136,26 @@ C:\Program Files (x86)\MSBuild\14.0\Bin
 <ul>
 <li><a href="https://cmake.org/download/">CMake</a></li>
 </ul>
+<blockquote class="doxtable">
+<p>Note: You'd better reopen a "Command Prompt (cmd)" after you change the <code>PATH</code>. </p>
+</blockquote>
 <h3>Build</h3>
-<div class="fragment"><div class="line">&gt; cd samples</div><div class="line">&gt; mkdir build</div><div class="line">&gt; cd build</div><div class="line"></div><div class="line">&gt; cmake -DCMAKE_BUILD_TYPE=Release ^</div><div class="line">-G &quot;Visual Studio 14 2015 Win64&quot; ^</div><div class="line">..</div><div class="line"></div><div class="line">&gt; msbuild.exe ALL_BUILD.vcxproj /property:Configuration=Release</div></div><!-- fragment --><p>About SDK samples' introductions, please see "samples/README.md".</p>
-<h2>Open SDK Documentations</h2>
-<div class="fragment"><div class="line">&gt; start doc\api\html\index.html</div></div><!-- fragment --> </div></div><!-- contents -->
+<div class="fragment"><div class="line">&gt; cd samples</div><div class="line">&gt; mkdir build</div><div class="line">&gt; cd build</div><div class="line"></div><div class="line">&gt; cmake -DCMAKE_BUILD_TYPE=Release ^</div><div class="line">-G &quot;Visual Studio 14 2015 Win64&quot; ^</div><div class="line">..</div><div class="line"></div><div class="line">&gt; msbuild.exe ALL_BUILD.vcxproj /property:Configuration=Release</div></div><!-- fragment --><p>Then you could run the sample like this:</p>
+<div class="fragment"><div class="line">&gt; .\samples\bin\camera.exe</div></div><!-- fragment --><p>Please see "samples/README.md" to learn more about the samples.</p>
+<h2>About SDK Tools</h2>
+<p>Please see "tools/README.md".</p>
+<h2>Open SDK Documentation</h2>
+<div class="fragment"><div class="line">&gt; start doc\api\html\index.html</div></div><!-- fragment --><h2>How about using different version of Visual Studio</h2>
+<p>The version must be greater than or equal to 2010, which support C++11 features.</p>
+<p>You should add the corresponding environment variables to <code>PATH</code>: </p><pre class="fragment">C:\Program Files (x86)\Microsoft Visual Studio &lt;?&gt;\VC\bin
+C:\Program Files (x86)\MSBuild\&lt;?&gt;\Bin
+</pre><p>And change the following command like this: </p><pre class="fragment">&gt; cmake -DCMAKE_BUILD_TYPE=Release ^
+-G "Visual Studio &lt;?&gt; &lt;?&gt; Win64" ^
+..
+</pre><p>You can also run <code>cmake -h</code> to learn more.</p>
+<h2>FAQ</h2>
+<p>If have issues when installing, you could make an attempt to find it in <a href="https://slightech.github.io/MYNT-EYE-SDK/faq.html">FAQ</a>. </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

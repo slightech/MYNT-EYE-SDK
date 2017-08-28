@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MYNT EYE SDK
-   &#160;<span id="projectnumber">v1.2</span>
+   &#160;<span id="projectnumber">v1.3</span>
    </div>
    <div id="projectbrief">https://www.slightech.com/camera</div>
   </td>
@@ -124,6 +124,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a14e025063dc7a0a5345518c882cf6523"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmynteye_1_1_camera.html#a14e025063dc7a0a5345518c882cf6523">IsOpened</a> ()</td></tr>
 <tr class="memdesc:a14e025063dc7a0a5345518c882cf6523"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests if the camera is opened.  <a href="#a14e025063dc7a0a5345518c882cf6523">More...</a><br /></td></tr>
 <tr class="separator:a14e025063dc7a0a5345518c882cf6523"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a774a631b5311d13d190364d4007c5acc"><td class="memItemLeft" align="right" valign="top"><a id="a774a631b5311d13d190364d4007c5acc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmynteye_1_1_camera.html#a774a631b5311d13d190364d4007c5acc">ActivateAsyncGrabFeature</a> ()</td></tr>
+<tr class="memdesc:a774a631b5311d13d190364d4007c5acc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activates async grap feature. <br /></td></tr>
+<tr class="separator:a774a631b5311d13d190364d4007c5acc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55e883c0ee3652a5cc4bcf96f87630c9"><td class="memItemLeft" align="right" valign="top"><a id="a55e883c0ee3652a5cc4bcf96f87630c9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmynteye_1_1_camera.html#a55e883c0ee3652a5cc4bcf96f87630c9">DeactivateAsyncGrabFeature</a> ()</td></tr>
+<tr class="memdesc:a55e883c0ee3652a5cc4bcf96f87630c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deactivates async grap feature. <br /></td></tr>
+<tr class="separator:a55e883c0ee3652a5cc4bcf96f87630c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5f5899ae2c0f8f1d2aa7c6aadd813ea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmynteye_1_1_camera.html#ab5f5899ae2c0f8f1d2aa7c6aadd813ea">IsAsyncGrabFeatureActivated</a> ()</td></tr>
+<tr class="memdesc:ab5f5899ae2c0f8f1d2aa7c6aadd813ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests if the async grap feature is activated.  <a href="#ab5f5899ae2c0f8f1d2aa7c6aadd813ea">More...</a><br /></td></tr>
+<tr class="separator:ab5f5899ae2c0f8f1d2aa7c6aadd813ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a279e9112a7d4c76bbf33a563042f2bc1"><td class="memItemLeft" align="right" valign="top"><a id="a279e9112a7d4c76bbf33a563042f2bc1"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmynteye_1_1_camera.html#a279e9112a7d4c76bbf33a563042f2bc1">ActivateDepthMapFeature</a> ()</td></tr>
 <tr class="memdesc:a279e9112a7d4c76bbf33a563042f2bc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activates depth map feature. <br /></td></tr>
@@ -146,10 +157,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a71a42f262d26696a39fc9daffd9d93d2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmynteye_1_1_camera.html#a71a42f262d26696a39fc9daffd9d93d2">IsPointCloudFeatureActivated</a> ()</td></tr>
 <tr class="memdesc:a71a42f262d26696a39fc9daffd9d93d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests if the point cloud feature is activated.  <a href="#a71a42f262d26696a39fc9daffd9d93d2">More...</a><br /></td></tr>
 <tr class="separator:a71a42f262d26696a39fc9daffd9d93d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9889bb23337a2224e50a7f82e4ab1984"><td class="memItemLeft" align="right" valign="top"><a id="a9889bb23337a2224e50a7f82e4ab1984"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmynteye_1_1_camera.html#a9889bb23337a2224e50a7f82e4ab1984">SetGrabProcessCallback</a> (<a class="el" href="namespacemynteye.html#abfc90a615ea5eb3a135e42dba23c1242">GrabProcessCallback</a> callback)</td></tr>
-<tr class="memdesc:a9889bb23337a2224e50a7f82e4ab1984"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets process grabbed images callback. <br /></td></tr>
-<tr class="separator:a9889bb23337a2224e50a7f82e4ab1984"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a081e00577fd1576c2511780b92e1ac2d"><td class="memItemLeft" align="right" valign="top"><a id="a081e00577fd1576c2511780b92e1ac2d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmynteye_1_1_camera.html#a081e00577fd1576c2511780b92e1ac2d">SetGrabErrorCallback</a> (<a class="el" href="namespacemynteye.html#a7244a4eeee91436d783fe6141961ed91">GrabErrorCallback</a> callback)</td></tr>
+<tr class="memdesc:a081e00577fd1576c2511780b92e1ac2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets grab error callback. <br /></td></tr>
+<tr class="separator:a081e00577fd1576c2511780b92e1ac2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55ca13c74cb24b389a07291a339a79c9"><td class="memItemLeft" align="right" valign="top"><a id="a55ca13c74cb24b389a07291a339a79c9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmynteye_1_1_camera.html#a55ca13c74cb24b389a07291a339a79c9">SetGrabProcessCallbacks</a> (<a class="el" href="namespacemynteye.html#a65c412fe23d71db0e57df3501f2765c1">GrabPreProcessCallback</a> pre_callback, <a class="el" href="namespacemynteye.html#a13ebbf86825c92056a8e91143839422b">GrabPostProcessCallback</a> post_callback)</td></tr>
+<tr class="memdesc:a55ca13c74cb24b389a07291a339a79c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets process grab callbacks. <br /></td></tr>
+<tr class="separator:a55ca13c74cb24b389a07291a339a79c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90175be909f92add012ec759160df91b"><td class="memItemLeft" align="right" valign="top"><a id="a90175be909f92add012ec759160df91b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmynteye_1_1_camera.html#a90175be909f92add012ec759160df91b">SetRectifyProcessCallbacks</a> (<a class="el" href="namespacemynteye.html#a1dd2d9acf29ba5e7f13a5ab12bf51732">RectifyPreProcessCallback</a> pre_callback, <a class="el" href="namespacemynteye.html#af43c709218f9bf41a396acd55375012a">RectifyPostProcessCallback</a> post_callback)</td></tr>
 <tr class="memdesc:a90175be909f92add012ec759160df91b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets process rectification callbacks. <br /></td></tr>
@@ -431,8 +446,30 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Grabs the new image, and process it. </p>
-<dl class="section note"><dt>Note</dt><dd>The grabbing function is typically called in the main loop. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The grabbing function is typically called in the main loop. </dd>
+<dd>
+If <a class="el" href="classmynteye_1_1_camera.html#a774a631b5311d13d190364d4007c5acc" title="Activates async grap feature. ">ActivateAsyncGrabFeature()</a>, you should <a class="el" href="classmynteye_1_1_camera.html#a081e00577fd1576c2511780b92e1ac2d" title="Sets grab error callback. ">SetGrabErrorCallback()</a> to listen the grab error. And this method only return <a class="el" href="group__enumerations.html#ggac366e337c9a6776d37d599076a014d26a13694614a8abfbf841ba226ffab6d024" title="Camera grab the image failed. ">ERROR_CAMERA_GRAB_FAILED</a> if there is not a new frame (it will block a moment to wait for grabbing). </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__enumerations.html#ggac366e337c9a6776d37d599076a014d26a5655a564f6f24ee95f6946126b920674" title="Standard code for successful behavior. ">SUCCESS</a> if ok, otherwise error. </dd></dl>
+
+</div>
+</div>
+<a id="ab5f5899ae2c0f8f1d2aa7c6aadd813ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5f5899ae2c0f8f1d2aa7c6aadd813ea">&#9670;&nbsp;</a></span>IsAsyncGrabFeatureActivated()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mynteye::Camera::IsAsyncGrabFeatureActivated </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tests if the async grap feature is activated. </p>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if activated. </dd></dl>
 
 </div>
 </div>

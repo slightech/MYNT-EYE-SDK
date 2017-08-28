@@ -9,5 +9,6 @@ var searchData=
   ['error_5ffeature_5fnot_5factivated',['ERROR_FEATURE_NOT_ACTIVATED',['../group__enumerations.html#ggac366e337c9a6776d37d599076a014d26aa46927f5f37e0da0e00b0b2fc96eb4c8',1,'mynteye']]],
   ['error_5ffile_5fopen_5ffailed',['ERROR_FILE_OPEN_FAILED',['../group__enumerations.html#ggac366e337c9a6776d37d599076a014d26a271b606aa6260e7b8195ec04aae25e17',1,'mynteye']]],
   ['error_5flast',['ERROR_LAST',['../group__enumerations.html#ggac366e337c9a6776d37d599076a014d26a2fe3edddaa0a596c745e3387918e8f3d',1,'mynteye']]],
+  ['errorcallback',['ErrorCallback',['../namespacemynteye.html#ad8682ac8ad261369fc1ed2b795569809',1,'mynteye']]],
   ['errorcode',['ErrorCode',['../group__enumerations.html#gac366e337c9a6776d37d599076a014d26',1,'mynteye']]]
 ];

@@ -126,7 +126,10 @@ Warning: sn is empty.
 <p>You could replug the camera and run any executable using SDK to solve it.</p>
 <p>The reason is the camera will be in low power state on Windows when you has plugged the camera for a while. And the SDK can not get the camera's infomation in this state.</p>
 <p>About the camera infomation, the SDK will cache it to a temporary file "setting/mynteye.info.temp" once you got it. When you failed to get the infomation, the SDK will read it from the temporary file if exists. Besides, you could create a file "setting/mynteye.info" to specify the camera infomation.</p>
-<h1>Known Issues</h1>
+<h2>6) "error LNK1104: cannot open file 'ws2_32.lib'" in using Visual Studio 2013</h2>
+<p>It is recommended that use Visual Studio 2015 to build "mynteye_sdk_samples.sln".</p>
+<p>Alternatively, you could try explicitly linking 'ws2_32.lib' to the executable binaries in <code>&lt;sdk&gt;/samples/CMakeLists.txt</code>.</p>
+<div class="fragment"><div class="line">if(MSVC)</div><div class="line">  target_link_libraries(&lt;executable&gt; wsock32 ws2_32)</div><div class="line">endif()</div></div><!-- fragment --><h1>Known Issues</h1>
 <h2>1) Open MYNT EYE camera failed on macOS.</h2>
 <p>It may hang when open the camera, after you open and close it several times on macOS.</p>
 <p>Reconnecting the MYNT EYE camera will solve this issue. </p>

@@ -1,4 +1,8 @@
 
 #projectlogo img {
-    margin: 1em 0.5em 1em 1em
+    margin: 1em 0.5em 1em 1em;
+}
+
+.image img[src="imu2.png"] {
+    width: 888px;
 }

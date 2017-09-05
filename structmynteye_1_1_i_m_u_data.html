@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MYNT EYE SDK
-   &#160;<span id="projectnumber">v1.3</span>
+   &#160;<span id="projectnumber">v1.4</span>
    </div>
    <div id="projectbrief">https://www.slightech.com/camera</div>
   </td>
@@ -105,6 +105,9 @@ $(document).ready(function(){initNavTree('structmynteye_1_1_i_m_u_data.html','')
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:a8157a66a1ad7fd7ac4f3d5562fadb7e4"><td class="memItemLeft" align="right" valign="top">std::uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmynteye_1_1_i_m_u_data.html#a8157a66a1ad7fd7ac4f3d5562fadb7e4">time</a></td></tr>
+<tr class="memdesc:a8157a66a1ad7fd7ac4f3d5562fadb7e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time which elapsed after camera working with unit 0.1ms.  <a href="#a8157a66a1ad7fd7ac4f3d5562fadb7e4">More...</a><br /></td></tr>
+<tr class="separator:a8157a66a1ad7fd7ac4f3d5562fadb7e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a646a0945c59a9c2619963e2563e873c0"><td class="memItemLeft" align="right" valign="top">std::int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmynteye_1_1_i_m_u_data.html#a646a0945c59a9c2619963e2563e873c0">time_offset</a></td></tr>
 <tr class="memdesc:a646a0945c59a9c2619963e2563e873c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time offset before retrieve IMU data with unit 0.1ms.  <a href="#a646a0945c59a9c2619963e2563e873c0">More...</a><br /></td></tr>
 <tr class="separator:a646a0945c59a9c2619963e2563e873c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -231,6 +234,25 @@ Public Attributes</h2></td></tr>
 
 <p>Gyroscope data for 3-axis: x, y, z. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="structmynteye_1_1_i_m_u_data.html#aaa9951fa129dae16b6a6cf37991c483a" title="Gyroscope data for 3-axis: x, y, z. ">gyro_x</a>, <a class="el" href="structmynteye_1_1_i_m_u_data.html#a6de6706cb5d5dc6fce65f550f86c3681" title="Gyroscope data for 3-axis: x, y, z. ">gyro_y</a>, <a class="el" href="structmynteye_1_1_i_m_u_data.html#adee78f1a9f4f568b719e39d3be519a70" title="Gyroscope data for 3-axis: x, y, z. ">gyro_z</a> </dd></dl>
+
+</div>
+</div>
+<a id="a8157a66a1ad7fd7ac4f3d5562fadb7e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8157a66a1ad7fd7ac4f3d5562fadb7e4">&#9670;&nbsp;</a></span>time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::uint32_t mynteye::IMUData::time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Time which elapsed after camera working with unit 0.1ms. </p>
+<dl class="section note"><dt>Note</dt><dd>time = time_retrieve + time_offset<br />
+time_ms = time / 10 </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classmynteye_1_1_camera.html#a97b050dc3f9e560bbd1ef9884dbd220d" title="Retrieves the IMU datas. ">Camera::RetrieveIMUData()</a> </dd></dl>
 
 </div>
 </div>

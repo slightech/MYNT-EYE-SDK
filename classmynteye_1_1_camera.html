@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MYNT EYE SDK
-   &#160;<span id="projectnumber">v1.3</span>
+   &#160;<span id="projectnumber">v1.4</span>
    </div>
    <div id="projectbrief">https://www.slightech.com/camera</div>
   </td>
@@ -124,10 +124,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a14e025063dc7a0a5345518c882cf6523"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmynteye_1_1_camera.html#a14e025063dc7a0a5345518c882cf6523">IsOpened</a> ()</td></tr>
 <tr class="memdesc:a14e025063dc7a0a5345518c882cf6523"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests if the camera is opened.  <a href="#a14e025063dc7a0a5345518c882cf6523">More...</a><br /></td></tr>
 <tr class="separator:a14e025063dc7a0a5345518c882cf6523"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a774a631b5311d13d190364d4007c5acc"><td class="memItemLeft" align="right" valign="top"><a id="a774a631b5311d13d190364d4007c5acc"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmynteye_1_1_camera.html#a774a631b5311d13d190364d4007c5acc">ActivateAsyncGrabFeature</a> ()</td></tr>
-<tr class="memdesc:a774a631b5311d13d190364d4007c5acc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activates async grap feature. <br /></td></tr>
-<tr class="separator:a774a631b5311d13d190364d4007c5acc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7c9fde4d4c2f644243a8dca167da826"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmynteye_1_1_camera.html#ab7c9fde4d4c2f644243a8dca167da826">ActivateAsyncGrabFeature</a> (bool keep_imu_frequency=false)</td></tr>
+<tr class="memdesc:ab7c9fde4d4c2f644243a8dca167da826"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activates async grap feature.  <a href="#ab7c9fde4d4c2f644243a8dca167da826">More...</a><br /></td></tr>
+<tr class="separator:ab7c9fde4d4c2f644243a8dca167da826"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55e883c0ee3652a5cc4bcf96f87630c9"><td class="memItemLeft" align="right" valign="top"><a id="a55e883c0ee3652a5cc4bcf96f87630c9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmynteye_1_1_camera.html#a55e883c0ee3652a5cc4bcf96f87630c9">DeactivateAsyncGrabFeature</a> ()</td></tr>
 <tr class="memdesc:a55e883c0ee3652a5cc4bcf96f87630c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deactivates async grap feature. <br /></td></tr>
@@ -267,6 +266,32 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab7c9fde4d4c2f644243a8dca167da826"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7c9fde4d4c2f644243a8dca167da826">&#9670;&nbsp;</a></span>ActivateAsyncGrabFeature()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mynteye::Camera::ActivateAsyncGrabFeature </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>keep_imu_frequency</em> = <code>false</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Activates async grap feature. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keep_imu_frequency</td><td>whether keep imu frequency or not. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="addb1957993169e13320bfca818315c07"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#addb1957993169e13320bfca818315c07">&#9670;&nbsp;</a></span>ActivatePlugin()</h2>
 
@@ -448,7 +473,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Grabs the new image, and process it. </p>
 <dl class="section note"><dt>Note</dt><dd>The grabbing function is typically called in the main loop. </dd>
 <dd>
-If <a class="el" href="classmynteye_1_1_camera.html#a774a631b5311d13d190364d4007c5acc" title="Activates async grap feature. ">ActivateAsyncGrabFeature()</a>, you should <a class="el" href="classmynteye_1_1_camera.html#a081e00577fd1576c2511780b92e1ac2d" title="Sets grab error callback. ">SetGrabErrorCallback()</a> to listen the grab error. And this method only return <a class="el" href="group__enumerations.html#ggac366e337c9a6776d37d599076a014d26a13694614a8abfbf841ba226ffab6d024" title="Camera grab the image failed. ">ERROR_CAMERA_GRAB_FAILED</a> if there is not a new frame (it will block a moment to wait for grabbing). </dd></dl>
+If <a class="el" href="classmynteye_1_1_camera.html#ab7c9fde4d4c2f644243a8dca167da826" title="Activates async grap feature. ">ActivateAsyncGrabFeature()</a>, you should <a class="el" href="classmynteye_1_1_camera.html#a081e00577fd1576c2511780b92e1ac2d" title="Sets grab error callback. ">SetGrabErrorCallback()</a> to listen the grab error. And this method only return <a class="el" href="group__enumerations.html#ggac366e337c9a6776d37d599076a014d26a13694614a8abfbf841ba226ffab6d024" title="Camera grab the image failed. ">ERROR_CAMERA_GRAB_FAILED</a> if there is not a new frame (it will block a moment to wait for grabbing). </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__enumerations.html#ggac366e337c9a6776d37d599076a014d26a5655a564f6f24ee95f6946126b920674" title="Standard code for successful behavior. ">SUCCESS</a> if ok, otherwise error. </dd></dl>
 
 </div>
@@ -663,12 +688,12 @@ If <a class="el" href="classmynteye_1_1_camera.html#a774a631b5311d13d190364d4007
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">imudatas</td><td>the given IMU datas. </td></tr>
-    <tr><td class="paramname">timestamp</td><td>the timestamp which elapsed after MYNTEYE working with unit 0.1ms. </td></tr>
+    <tr><td class="paramname">timestamp</td><td>the timestamp which elapsed after camera working with unit 0.1ms. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__enumerations.html#ggac366e337c9a6776d37d599076a014d26a5655a564f6f24ee95f6946126b920674" title="Standard code for successful behavior. ">SUCCESS</a> if ok, otherwise error. </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>time_elapsed_ms = timestamp / 10 </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>timestamp_ms = timestamp / 10 </dd></dl>
 
 </div>
 </div>

@@ -6,5 +6,6 @@ var structmynteye_1_1_i_m_u_data =
     [ "gyro_x", "structmynteye_1_1_i_m_u_data.html#aaa9951fa129dae16b6a6cf37991c483a", null ],
     [ "gyro_y", "structmynteye_1_1_i_m_u_data.html#a6de6706cb5d5dc6fce65f550f86c3681", null ],
     [ "gyro_z", "structmynteye_1_1_i_m_u_data.html#adee78f1a9f4f568b719e39d3be519a70", null ],
+    [ "time", "structmynteye_1_1_i_m_u_data.html#a8157a66a1ad7fd7ac4f3d5562fadb7e4", null ],
     [ "time_offset", "structmynteye_1_1_i_m_u_data.html#a646a0945c59a9c2619963e2563e873c0", null ]
 ];

@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('getting_started_mac.html','');});
 <li>Download and install latest version of <a href="https://developer.nvidia.com/cuda-downloads">CUDA Toolkit</a>.</li>
 </ul>
 <div class="fragment"><div class="line">$ brew tap caskroom/cask</div><div class="line">$ brew cask install cuda</div><div class="line">$ brew cask info cuda</div></div><!-- fragment --><h2>Install SDK</h2>
-<div class="fragment"><div class="line">$ cd mynteye-&lt;version&gt;-mac-x64/</div><div class="line">$ ./install.sh</div><div class="line">$ source ~/.bash_profile</div></div><!-- fragment --><p>If your CUDA is not installed in <code>/usr/local/cuda/lib</code>, before running <code>./install.sh</code>, you should change the following variables in <code>./install.sh</code>: </p><pre class="fragment">RPATH_CUDA=/usr/local/cuda/lib
+<div class="fragment"><div class="line">$ cd &lt;sdk directory&gt;</div><div class="line">$ ./install.sh</div><div class="line">$ source ~/.bash_profile</div></div><!-- fragment --><p>If your CUDA is not installed in <code>/usr/local/cuda/lib</code>, before running <code>./install.sh</code>, you should change the following variables in <code>./install.sh</code>: </p><pre class="fragment">RPATH_CUDA=/usr/local/cuda/lib
 </pre><p>Then, the apps in SDK could detect the CUDA runtime correctly.</p>
 <p>Note: It is not recommended that install OpenCV or CUDA in a different location. Because the <code>install.sh</code> not change the SDK libraries' rpath of them now. If you run the binary executables on Terminal, you could easily specify OpenCV and CUDA library search paths in <code>~/.bash_profile</code> like this: </p><pre class="fragment">CUDA_LIBDIR=/usr/local/cuda/lib
 OPENCV_LIBDIR=/usr/local/lib

@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('getting_started_win.html','');});
 <p>If you have Nvidia's graphic card, you could enable GPU compute capability as follows:</p>
 <ul>
 <li>Ensure your graphic card drivers are up to date.</li>
-<li>Download and install latest version of <a href="https://developer.nvidia.com/cuda-downloads">CUDA Toolkit</a>.</li>
+<li>Download and install latest version of <a href="https://developer.nvidia.com/cuda-downloads">CUDA Toolkit 9.x</a>.</li>
 </ul>
 <h2>Install SDK</h2>
 <h3>Using Executable</h3>
@@ -108,7 +108,7 @@ $(document).ready(function(){initNavTree('getting_started_win.html','');});
 <h3>Using Archive</h3>
 <p>Extract the archive named <code>*.tar.gz</code>.</p>
 <p>Run "Command Prompt (cmd)" as administrator, then:</p>
-<div class="fragment"><div class="line">&gt; cd mynteye-&lt;version&gt;-win-x64-&lt;opencv&gt;</div><div class="line">&gt; install.bat</div></div><!-- fragment --><blockquote class="doxtable">
+<div class="fragment"><div class="line">&gt; cd &lt;sdk directory&gt;</div><div class="line">&gt; install.bat</div></div><!-- fragment --><blockquote class="doxtable">
 <p>Note: Must open a new "Command Prompt (cmd)" as administrator, then execute <code>install.bat</code> to setup SDK. Otherwise, the environment variables won't be correct. Besides, you'd better reopen a "Command Prompt (cmd)" to "Check Installation" and "Build SDK Samples". </p>
 </blockquote>
 <h2>Check Installation</h2>
@@ -131,17 +131,18 @@ $(document).ready(function(){initNavTree('getting_started_win.html','');});
 </blockquote>
 <h2>How to solve issues when run <code>Previewer</code></h2>
 <ul>
-<li>Error: opencv*.dll, mynteye*.dll, Qt5*.dll not found<ul>
+<li>Error: <code>opencv*.dll</code>, <code>mynteye*.dll</code>, <code>Qt5*.dll</code> not found<ul>
 <li>Check installation, ensure <code>%MYNTEYE_SDK_PATH%</code> in <code>PATH</code> and reboot.</li>
 </ul>
 </li>
-<li>Error: api-ms-win-crt-runtime-l1-1-0.dll not found<ul>
+<li>Error: <code>api-ms-win-crt-runtime-l1-1-0.dll</code> not found<ul>
 <li>Download and install <a href="https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows">Universal CRT</a>, see <a href="https://helpx.adobe.com/creative-cloud/kb/error_on_launch.html">here</a>.</li>
 <li>Or, download and install <a href="http://www.pc6.com/softview/SoftView_104246.html">this (Chinese)</a>.</li>
 </ul>
 </li>
-<li>Error: nppi64_80.dll not found<ul>
+<li>Error: <code>nppi64_*.dll</code> not found<ul>
 <li>Please install <a href="https://developer.nvidia.com/cuda-downloads">CUDA Toolkit</a>.</li>
+<li>E.g. <code>nppi64_80.dll</code> needs "CUDA Toolkit 8.0".</li>
 </ul>
 </li>
 </ul>
@@ -165,7 +166,7 @@ C:\Program Files (x86)\MSBuild\14.0\Bin
 <p>Note: You'd better reopen a "Command Prompt (cmd)" after you change the <code>PATH</code>. </p>
 </blockquote>
 <h3>Build</h3>
-<div class="fragment"><div class="line">&gt; cd samples</div><div class="line">&gt; mkdir build</div><div class="line">&gt; cd build</div><div class="line"></div><div class="line">&gt; cmake -DCMAKE_BUILD_TYPE=Release ^</div><div class="line">-G &quot;Visual Studio 14 2015 Win64&quot; ^</div><div class="line">..</div><div class="line"></div><div class="line">&gt; msbuild.exe ALL_BUILD.vcxproj /property:Configuration=Release</div><div class="line"># Or, open &quot;&lt;sdk&gt;\samples\build\mynteye_sdk_samples.sln&quot; to build.</div><div class="line">#   Please select &quot;Configuration: Release&quot; &quot;Platform: x64&quot; in solution configuration properties.</div></div><!-- fragment --><p>Then you could run the sample like this:</p>
+<div class="fragment"><div class="line">&gt; cd samples</div><div class="line">&gt; mkdir build</div><div class="line">&gt; cd build</div><div class="line"></div><div class="line">&gt; cmake -DCMAKE_BUILD_TYPE=Release ^</div><div class="line">-G &quot;Visual Studio 14 2015 Win64&quot; ^</div><div class="line">..</div><div class="line"></div><div class="line">&gt; msbuild.exe ALL_BUILD.vcxproj /property:Configuration=Release</div><div class="line"># Or, open &quot;&lt;sdk&gt;\samples\build\mynteye_sdk_samples.sln&quot; with Visual Studio to build.</div><div class="line">#   Please select &quot;Configuration: Release&quot; &quot;Platform: x64&quot; in solution configuration properties.</div><div class="line">#</div><div class="line"># If run with &quot;Debug x64&quot; in Visual Studio, you should open project properties and setup:</div><div class="line">#   C/C++ &gt; Code Generation, Runtime Library = Multi-threaded DLL (/MD)</div></div><!-- fragment --><p>Then you could run the sample like this:</p>
 <div class="fragment"><div class="line">&gt; .\samples\bin\camera.exe</div></div><!-- fragment --><p>Please see "samples/README.md" to learn more about the samples.</p>
 <h2>About SDK Tools</h2>
 <p>Please see "tools/README.md".</p>

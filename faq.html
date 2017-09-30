@@ -129,7 +129,30 @@ Warning: sn is empty.
 <h2>6) "error LNK1104: cannot open file 'ws2_32.lib'" in using Visual Studio 2013</h2>
 <p>It is recommended that use Visual Studio 2015 to build "mynteye_sdk_samples.sln".</p>
 <p>Alternatively, you could try explicitly linking 'ws2_32.lib' to the executable binaries in <code>&lt;sdk&gt;/samples/CMakeLists.txt</code>.</p>
-<div class="fragment"><div class="line">if(MSVC)</div><div class="line">  target_link_libraries(&lt;executable&gt; wsock32 ws2_32)</div><div class="line">endif()</div></div><!-- fragment --><h1>Known Issues</h1>
+<div class="fragment"><div class="line">if(MSVC)</div><div class="line">  target_link_libraries(&lt;executable&gt; wsock32 ws2_32)</div><div class="line">endif()</div></div><!-- fragment --><h2>7) "error while loading shared libraries: .. file too short" on Linux</h2>
+<pre class="fragment">lib/libmynteye_core.so: error while loading shared libraries: /home/cc/mynt/mynteye-1.5-linux-x64-gcc5-opencv-3.2.0/lib/3rdparty/libavformat.so.57: file too short
+</pre><p>It means the shared library size is incorrect. Please download the SDK and extract it again.</p>
+<p>Besides, you could check the archive's MD5 checksum like that:</p>
+<div class="fragment"><div class="line">$ md5sum xxx.tar.gz</div></div><!-- fragment --><h2>8) "error adding symbols: File in wrong format" on Linux</h2>
+<pre class="fragment">.../lib/libmynteye_core.so: error adding symbols: File in wrong format
+</pre><p>It means the shared library format is incorrect. Check your system's architecture like that:</p>
+<div class="fragment"><div class="line">$ uname -a</div><div class="line">Linux john-ubuntu 4.10.0-35-generic #39~16.04.1-Ubuntu SMP Wed Sep 13 09:02:42 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux</div></div><!-- fragment --><table class="doxtable">
+<tr>
+<th>Arch </th><th>Archive Name  </th></tr>
+<tr>
+<td>x86, i686, i386 </td><td>- </td></tr>
+<tr>
+<td>x86_64 </td><td>x64 </td></tr>
+<tr>
+<td>arm </td><td>- </td></tr>
+<tr>
+<td>aarch64 </td><td>aarch64 </td></tr>
+</table>
+<blockquote class="doxtable">
+<p>The "Archive Name" marked with <code>-</code> means not supported. </p>
+</blockquote>
+<p>Then, download the SDK archive with the same architecture and install.</p>
+<h1>Known Issues</h1>
 <h2>1) Open MYNT EYE camera failed on macOS.</h2>
 <p>It may hang when open the camera, after you open and close it several times on macOS.</p>
 <p>Reconnecting the MYNT EYE camera will solve this issue. </p>

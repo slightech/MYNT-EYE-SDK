@@ -133,6 +133,32 @@ SDK Structure</div></div>
 <img src="imu2.png" alt="imu2.png"/>
 <div class="caption">
 IMU Axis</div></div>
+ <h3>IMU Rotation and Translation</h3>
+<blockquote class="doxtable">
+<p>Right-handed coordinate system, RUB (right-up-back). </p>
+</blockquote>
+<p>IMU Rotation matrix (rotate 90° around the z-axis): </p><pre class="fragment">[0, -1, 0,
+ 1,  0, 0,
+ 0,  0, 1]
+</pre><p>Translation vector from camera to IMU (in meter):</p>
+<table class="doxtable">
+<tr>
+<th></th><th>Translation  </th></tr>
+<tr>
+<td>Camera Left </td><td>[ 0.07608, -0.00312, -0.01464] </td></tr>
+<tr>
+<td>Camera Right </td><td>[-0.04392, -0.00312, -0.01464] </td></tr>
+</table>
+<p>The value of z-axis is from the center of the lens to the board. The deviation maybe ±0.25mm because of the difference in focal length.</p>
+<h3>IMU Noise Density and Random Walk</h3>
+<table class="doxtable">
+<tr>
+<th></th><th>Noise Density </th><th>Random Walk  </th></tr>
+<tr>
+<td>Accelerometer </td><td>7.6509e-02 </td><td>5.3271e-02 </td></tr>
+<tr>
+<td>Gyroscope </td><td>9.0086e-03 </td><td>5.5379e-05 </td></tr>
+</table>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

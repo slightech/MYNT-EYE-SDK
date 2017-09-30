@@ -9,7 +9,7 @@ var indexSectionsWithContent =
   6: "egmpv",
   7: "begmpstv",
   8: "p",
-  9: "fghrstå"
+  9: "afghrstå"
 };
 
 var indexSectionNames =

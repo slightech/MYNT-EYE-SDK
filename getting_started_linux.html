@@ -107,9 +107,8 @@ $(document).ready(function(){initNavTree('getting_started_linux.html','');});
 <li>Download and install latest version of <a href="https://developer.nvidia.com/cuda-downloads">CUDA Toolkit</a>.</li>
 </ul>
 <h2>Install SDK</h2>
-<div class="fragment"><div class="line">$ cd mynteye-&lt;version&gt;-linux-x64-&lt;gcc&gt;/</div><div class="line">$ ./install.sh</div><div class="line">$ source ~/.bashrc</div></div><!-- fragment --><p>If your OpenCV or CUDA is installed in a different path, before running <code>./install.sh</code>, you could change the following variables in <code>./install.sh</code>: </p><pre class="fragment">RPATH_CUDA=/usr/local/cuda/lib64
-RPATH_OPENCV=/usr/local/lib
-</pre><h2>Check Installation</h2>
+<p>Go to the SDK directory and edit <code>sdk.cfg</code> to set your OpenCV install directory etc., then install:</p>
+<div class="fragment"><div class="line">$ cd &lt;sdk directory&gt;</div><div class="line">$ ./install.sh</div><div class="line">$ source ~/.bashrc</div></div><!-- fragment --><h2>Check Installation</h2>
 <p>After <code>./install.sh</code>, you could check the environment variables:</p>
 <div class="fragment"><div class="line">$ echo $MYNTEYE_SDK_ROOT</div><div class="line">&lt;Should be the sdk path&gt;</div></div><!-- fragment --><h2>Build SDK Samples</h2>
 <div class="fragment"><div class="line">$ cd samples/</div><div class="line">$ mkdir build</div><div class="line">$ cd build/</div><div class="line">$ cmake -DCMAKE_BUILD_TYPE=Release ..</div><div class="line">$ make</div></div><!-- fragment --><p>Then you could run the sample like this:</p>

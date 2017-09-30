@@ -9,7 +9,8 @@ var NAVTREE =
       [ "Modules", "modules.html", "modules" ],
     ] ],
     [ "FAQ & Issues", "faq.html", null ],
-    [ "Release Notes", "release_notes.html", null ]
+    [ "Release Notes", "release_notes.html", null ],
+    [ "Appendix: 简中文档", "appendix_zh-hans.html", "appendix_zh-hans" ]
   ] ]
 ];
 

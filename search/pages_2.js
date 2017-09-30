@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['how_20to_20calibrate_20camera_20and_20imu_20with_20kalibr',['How to calibrate camera and IMU with Kalibr',['../calibrate_with_kalibr.html',1,'tutorials']]],
-  ['how_20to_20calibrate_20camera_20with_20opencv',['How to calibrate camera with OpenCV',['../calibrate_with_opencv.html',1,'tutorials']]],
-  ['how_20to_20upgrade_20firmware',['How to upgrade firmware',['../upgrade_firmware.html',1,'tutorials']]]
+  ['getting_20started',['Getting Started',['../getting_started.html',1,'']]],
+  ['getting_20started_20on_20linux',['Getting Started on Linux',['../getting_started_linux.html',1,'getting_started']]],
+  ['getting_20started_20on_20macos',['Getting Started on macOS',['../getting_started_mac.html',1,'getting_started']]],
+  ['getting_20started_20on_20tegra_20_28tx1_2c_20tx2_29',['Getting Started on Tegra (TX1, TX2)',['../getting_started_tegra.html',1,'getting_started']]],
+  ['getting_20started_20on_20windows_20_28msvc_29',['Getting Started on Windows (MSVC)',['../getting_started_win.html',1,'getting_started']]]
 ];

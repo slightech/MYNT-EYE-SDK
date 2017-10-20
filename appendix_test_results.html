@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MYNT EYE SDK: How to calibrate camera with OpenCV</title>
+<title>MYNT EYE SDK: Appendix: Test Results</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -74,7 +74,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('calibrate_with_opencv.html','');});
+$(document).ready(function(){initNavTree('appendix_test_results.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -93,44 +93,26 @@ $(document).ready(function(){initNavTree('calibrate_with_opencv.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">How to calibrate camera with OpenCV </div>  </div>
+<div class="title">Appendix: Test Results </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>When using MYNT EYE camera first time, the SDK will download a calibration file for this camera to "settings/SN*.conf".</p>
-<p>Besides, the SDK also provides a <code>stereo_calib</code> tool to help calibrate camera with OpenCV by yourself.</p>
-<h2><code>stereo_calib</code></h2>
-<div class="fragment"><div class="line">$ cd $MYNTEYE_SDK_ROOT</div><div class="line">$ ./tools/stereo_calib -help</div><div class="line">Stereo calibration with square chessboard.</div><div class="line"></div><div class="line">  Calibrate the stereo camera and display rectified results along with the computed disparity images.</div><div class="line"></div><div class="line">  Chessboard pattern which has a size of 9 X 6: http://docs.opencv.org/master/pattern.png.</div><div class="line"></div><div class="line">Usage:</div><div class="line"></div><div class="line">  ./stereo_calib -w=9 -h=6 -s=1.0 [-nr] [-n=12 -i=1] &lt;image list&gt;</div><div class="line"></div><div class="line">Options:</div><div class="line">                     Default    Description</div><div class="line">  -help                         show help message</div><div class="line"></div><div class="line">  -w=&lt;board_width&gt;        9     number of inner corners per a chessboard row</div><div class="line">  -h=&lt;board_height&gt;       6     number of inner corners per a chessboard column</div><div class="line">  -s=&lt;square_size&gt;      1.0     the square side length in real measurement</div><div class="line">                                    scale the vectors of the calibration pattern points</div><div class="line">  -nr                           not display rectified results</div><div class="line"></div><div class="line">  -n=&lt;image_number&gt;       0     capture images manually if greater then 0</div><div class="line">                                    stored into `./images` directory</div><div class="line">  -i=&lt;device_index&gt;       0     device index, but default is MYNTEYE on Windows</div><div class="line">                                    `./tools/list_devices` to see indexes on Linux/Mac</div><div class="line"></div><div class="line">  &lt;image list&gt;  ./stereo_calib.xml  given images in a XML/YML file</div></div><!-- fragment --><h2>Calibration</h2>
-<ol type="1">
-<li>Prepare a calibration board with square chessboard.<ul>
-<li>Could print a chessboard pattern and paste it on a board which had better be flat and hard.</li>
-</ul>
-</li>
-<li>Plug the camera in a USB 3.0 port.</li>
-<li>Run <code>stereo_calib</code> to calibrate camera. <pre class="fragment"> ```
- # Manually capture `12` images of device `1`, then calibrate.
- $ ./tools/stereo_calib -w=9 -h=6 -s=25 -n=12 -i=1
-
- # Using captured images in `images/imagelist.yaml` to calibrate.
- $ ./tools/stereo_calib -w=9 -h=6 -s=25 images/imagelist.yaml
- ```
-</pre><ul>
-<li>If not sure which index is MYNT EYE, you could run <code>./tools/list_devices</code>.</li>
-<li>If not <code>-nr</code> option, you will preview rectified results after calibration done.<ul>
-<li>Press <code>space</code> to next or <code>esc</code> to exit.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>The calibration file will be saved to "&lt;MYNTEYE_SDK_ROOT&gt;/settings/SN*.conf".</li>
-</ol>
-<h2>SN*.conf</h2>
-<div class="image">
-<img src="conf.png" alt="conf.png"/>
-</div>
-<h2>References</h2>
-<ul>
-<li><a href="http://docs.opencv.org/master/d4/d94/tutorial_camera_calibration.html">Camera calibration With OpenCV</a> </li>
-</ul>
+<div class="textblock"><p>Test results on some boards and computers, based on SDK 1.5.</p>
+<table class="doxtable">
+<tr>
+<th></th><th>CPU </th><th>GPU </th><th>Memory </th><th>System </th><th>Camera FPS </th><th>Depth FPS (CPU) </th><th>Depth FPS (GPU)  </th></tr>
+<tr>
+<td>Rockchip RK3399 </td><td>ARM Cortex A72x2 Cortex A53x4 </td><td>ARM Mali-T860 MP4 </td><td>2GB DDR3 </td><td>Ubuntu 16.04 </td><td>Avg. 30 </td><td>752x480@1FPS </td><td>N/A  </td></tr>
+<tr>
+<td>NVIDIA Tegra X2 </td><td>Dual-Core NVIDIA Denver2 + Quad-Core ARM Cortex-A57 </td><td>256-Core Pascal GPU </td><td>8GB LPDDR4 </td><td>Ubuntu 16.04 </td><td>Avg. 30 </td><td>N/A </td><td>752x480@12.5FPS  </td></tr>
+<tr>
+<td>Hasee K550D-I7 D2 </td><td>Intel Core i7 4710MQ 2.5GHz x4 </td><td>NVIDIA GeForce 950M 4GB GDDR5 </td><td>2×8GB DDR3 </td><td>Ubuntu 16.04 </td><td>60 </td><td>752x480@8FPS </td><td>752x480@27FPS  </td></tr>
+<tr>
+<td>Hasee Z7-SP5D1 </td><td>Intel Core i5 6300HQ 2.3GHz x4 </td><td>NVIDIA GeForce GTX 1060 6GB GDDR5 </td><td>8GB DDR3 </td><td>Ubuntu 16.04 </td><td>60 </td><td>752x480@7FPS </td><td>752x480@60FPS  </td></tr>
+<tr>
+<td>Hasee K640E-i7 D1 </td><td>Intel Core i7 4710MQ 2.5GHz x4 </td><td>NVIDIA GeForce 940M 2GB GDDR3 </td><td>8GB DDR3 </td><td>Windows 7 </td><td>60 </td><td>752x480@8FPS </td><td>752x480@12FPS  </td></tr>
+<tr>
+<td>Macbook Pro Retina, 15-inch, Late 2013 </td><td>Intel Core i7 2.3GHz x4 </td><td>NVIDIA GeForce GT750M 2GB </td><td>2x8GB DDR3 </td><td>macOS 10.12 </td><td>60 </td><td>752x480@7FPS </td><td>752x480@12.5FPS  </td></tr>
+</table>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

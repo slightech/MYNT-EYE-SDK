@@ -6,3 +6,17 @@
 .image img[src="imu2.png"] {
     width: 888px;
 }
+
+.image img[src="conf.png"] {
+    width: 50%;
+}
+
+table#table-platforms tr:first-child td {
+    background-color: #374F7F;
+    color: #FFFFFF;
+    font-size: 110%;
+    padding-bottom: 4px;
+    padding-top: 5px;
+    font-weight: bold;
+    text-align: center;
+}

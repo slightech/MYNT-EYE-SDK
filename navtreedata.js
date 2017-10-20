@@ -10,6 +10,8 @@ var NAVTREE =
     ] ],
     [ "FAQ & Issues", "faq.html", null ],
     [ "Release Notes", "release_notes.html", null ],
+    [ "Appendix: Build Platforms", "appendix_build_platforms.html", null ],
+    [ "Appendix: Test Results", "appendix_test_results.html", null ],
     [ "Appendix: 简中文档", "appendix_zh-hans.html", "appendix_zh-hans" ]
   ] ]
 ];

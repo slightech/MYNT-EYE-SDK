@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['top_5fleft',['TOP_LEFT',['../group__enumerations.html#gga4d1c4c02cb7ae5d5668c1e12fe1a6689a6ef7c1e163228ec9a253c692e6d5278d',1,'mynteye']]],
-  ['top_5fright',['TOP_RIGHT',['../group__enumerations.html#gga4d1c4c02cb7ae5d5668c1e12fe1a6689a927bc1895a358e2e1bf243b50c1ca322',1,'mynteye']]]
+  ['success',['SUCCESS',['../group__enumerations.html#ggac366e337c9a6776d37d599076a014d26a5655a564f6f24ee95f6946126b920674',1,'mynteye']]]
 ];

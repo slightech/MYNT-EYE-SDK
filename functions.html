@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MYNT EYE SDK
-   &#160;<span id="projectnumber">v1.5</span>
+   &#160;<span id="projectnumber">v1.6</span>
    </div>
    <div id="projectbrief">https://www.slightech.com/camera</div>
   </td>
@@ -160,22 +160,24 @@ $(document).ready(function(){initNavTree('functions.html','');});
 </ul>
 
 
-<h3><a id="index_f"></a>- f -</h3><ul>
-<li>framerate
-: <a class="el" href="structmynteye_1_1_init_parameters.html#add801df11ae40faa0230cf62370909c6">mynteye::InitParameters</a>
-</li>
-</ul>
-
-
 <h3><a id="index_g"></a>- g -</h3><ul>
+<li>GetBrightness()
+: <a class="el" href="classmynteye_1_1_camera.html#aad4dac585299c605a3116286a9f12aab">mynteye::Camera</a>
+</li>
 <li>GetCalibrationParameters()
 : <a class="el" href="classmynteye_1_1_camera.html#a802fddfaf40b7e7622a2f5515cb42a4b">mynteye::Camera</a>
 </li>
 <li>GetCameraInformation()
 : <a class="el" href="classmynteye_1_1_camera.html#a66e12d59a450dbefc69aad0fecb3a73b">mynteye::Camera</a>
 </li>
+<li>GetContrast()
+: <a class="el" href="classmynteye_1_1_camera.html#afa4901a320170a17509ddc18222d0e2d">mynteye::Camera</a>
+</li>
 <li>GetDroppedCount()
 : <a class="el" href="classmynteye_1_1_camera.html#ab9c77ba0f8872a87907a0df9419b2c16">mynteye::Camera</a>
+</li>
+<li>GetGain()
+: <a class="el" href="classmynteye_1_1_camera.html#a52580469613eb86e5c6fe049f22032ba">mynteye::Camera</a>
 </li>
 <li>GetResolution()
 : <a class="el" href="classmynteye_1_1_camera.html#ab62ec8aa076566ef379088b218cf009e">mynteye::Camera</a>
@@ -185,6 +187,9 @@ $(document).ready(function(){initNavTree('functions.html','');});
 </li>
 <li>GetSDKVersion()
 : <a class="el" href="classmynteye_1_1_camera.html#a14ef859d71ad7f9267a1a5aa0fdb3e95">mynteye::Camera</a>
+</li>
+<li>GetTimestamp()
+: <a class="el" href="classmynteye_1_1_camera.html#a7e617ba757d7e1be18fef7d172436e1f">mynteye::Camera</a>
 </li>
 <li>Grab()
 : <a class="el" href="classmynteye_1_1_camera.html#a622872fc90ff85f405e02158f278aa10">mynteye::Camera</a>
@@ -214,6 +219,9 @@ $(document).ready(function(){initNavTree('functions.html','');});
 </li>
 <li>IsAsyncGrabFeatureActivated()
 : <a class="el" href="classmynteye_1_1_camera.html#ab5f5899ae2c0f8f1d2aa7c6aadd813ea">mynteye::Camera</a>
+</li>
+<li>IsAutoExposureEnabled()
+: <a class="el" href="classmynteye_1_1_camera.html#ae1d384201081869a98fa38963a076d8c">mynteye::Camera</a>
 </li>
 <li>IsDepthMapFeatureActivated()
 : <a class="el" href="classmynteye_1_1_camera.html#a129c5953744bd830067144bd0bb8f43f">mynteye::Camera</a>
@@ -319,6 +327,12 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>R
 : <a class="el" href="structmynteye_1_1_calibration_parameters.html#a1ddd793c0e3a95f682bcd3f1001932d4">mynteye::CalibrationParameters</a>
 </li>
+<li>rate
+: <a class="el" href="structmynteye_1_1_init_parameters.html#a62275bd7084294c89d8190bb061230cc">mynteye::InitParameters</a>
+</li>
+<li>RequestZeroDriftCalibration()
+: <a class="el" href="classmynteye_1_1_camera.html#ab43692baea15fec24ce1b25045455017">mynteye::Camera</a>
+</li>
 <li>Resolution()
 : <a class="el" href="structmynteye_1_1_resolution.html#a91debf041b30866ca8a7dbd1a9087686">mynteye::Resolution</a>
 </li>
@@ -326,7 +340,7 @@ $(document).ready(function(){initNavTree('functions.html','');});
 : <a class="el" href="classmynteye_1_1_camera.html#a46cc2f745e4af52ca000301464217036">mynteye::Camera</a>
 </li>
 <li>RetrieveIMUData()
-: <a class="el" href="classmynteye_1_1_camera.html#a97b050dc3f9e560bbd1ef9884dbd220d">mynteye::Camera</a>
+: <a class="el" href="classmynteye_1_1_camera.html#aca3445369b808defe0c3c0fb9adf5691">mynteye::Camera</a>
 </li>
 </ul>
 
@@ -340,8 +354,20 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>serial
 : <a class="el" href="structmynteye_1_1_camera_information.html#ab80598bcc700a0e501445d56b73a33e9">mynteye::CameraInformation</a>
 </li>
+<li>SetAutoExposureEnabled()
+: <a class="el" href="classmynteye_1_1_camera.html#a57933c0f4ac84af89ac8f7924f1cb7bf">mynteye::Camera</a>
+</li>
+<li>SetBrightness()
+: <a class="el" href="classmynteye_1_1_camera.html#afd5a52ae0d41524d4a201992a1083ba2">mynteye::Camera</a>
+</li>
+<li>SetContrast()
+: <a class="el" href="classmynteye_1_1_camera.html#ac482e6f5472e2f0ea00a5d1b7ea9b548">mynteye::Camera</a>
+</li>
 <li>SetDepthMapProcessCallbacks()
 : <a class="el" href="classmynteye_1_1_camera.html#a90951f016d51689b5105214e0e0dd017">mynteye::Camera</a>
+</li>
+<li>SetGain()
+: <a class="el" href="classmynteye_1_1_camera.html#a44bac0e0a3a2f429cdaf889ec425b18f">mynteye::Camera</a>
 </li>
 <li>SetGrabErrorCallback()
 : <a class="el" href="classmynteye_1_1_camera.html#a081e00577fd1576c2511780b92e1ac2d">mynteye::Camera</a>
@@ -354,6 +380,9 @@ $(document).ready(function(){initNavTree('functions.html','');});
 </li>
 <li>SetPointCloudProcessCallbacks()
 : <a class="el" href="classmynteye_1_1_camera.html#a2576593f368f5370375a7b8a9ebac6b9">mynteye::Camera</a>
+</li>
+<li>SetRate()
+: <a class="el" href="classmynteye_1_1_camera.html#ac24fd294d9b8f4e893a64faad53132be">mynteye::Camera</a>
 </li>
 <li>SetRectifyProcessCallbacks()
 : <a class="el" href="classmynteye_1_1_camera.html#a90175be909f92add012ec759160df91b">mynteye::Camera</a>

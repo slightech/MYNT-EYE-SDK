@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MYNT EYE SDK
-   &#160;<span id="projectnumber">v1.5</span>
+   &#160;<span id="projectnumber">v1.6</span>
    </div>
    <div id="projectbrief">https://www.slightech.com/camera</div>
   </td>
@@ -106,10 +106,11 @@ $(document).ready(function(){initNavTree('structmynteye_1_1_i_m_u_data.html','')
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a8157a66a1ad7fd7ac4f3d5562fadb7e4"><td class="memItemLeft" align="right" valign="top">std::uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmynteye_1_1_i_m_u_data.html#a8157a66a1ad7fd7ac4f3d5562fadb7e4">time</a></td></tr>
-<tr class="memdesc:a8157a66a1ad7fd7ac4f3d5562fadb7e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time which elapsed after camera working with unit 0.1ms.  <a href="#a8157a66a1ad7fd7ac4f3d5562fadb7e4">More...</a><br /></td></tr>
+<tr class="memdesc:a8157a66a1ad7fd7ac4f3d5562fadb7e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time which elapsed after camera working, in unit 0.1ms.  <a href="#a8157a66a1ad7fd7ac4f3d5562fadb7e4">More...</a><br /></td></tr>
 <tr class="separator:a8157a66a1ad7fd7ac4f3d5562fadb7e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a646a0945c59a9c2619963e2563e873c0"><td class="memItemLeft" align="right" valign="top">std::int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmynteye_1_1_i_m_u_data.html#a646a0945c59a9c2619963e2563e873c0">time_offset</a></td></tr>
-<tr class="memdesc:a646a0945c59a9c2619963e2563e873c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time offset before retrieve IMU data with unit 0.1ms.  <a href="#a646a0945c59a9c2619963e2563e873c0">More...</a><br /></td></tr>
+<tr class="memitem:a646a0945c59a9c2619963e2563e873c0"><td class="memItemLeft" align="right" valign="top"><a id="a646a0945c59a9c2619963e2563e873c0"></a>
+std::int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmynteye_1_1_i_m_u_data.html#a646a0945c59a9c2619963e2563e873c0">time_offset</a></td></tr>
+<tr class="memdesc:a646a0945c59a9c2619963e2563e873c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time offset before retrieve IMU data, in unit 0.1ms. <br /></td></tr>
 <tr class="separator:a646a0945c59a9c2619963e2563e873c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:a9fa4a90aeed44ccd449cfb57c02d0761"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmynteye_1_1_i_m_u_data.html#a9fa4a90aeed44ccd449cfb57c02d0761">accel_x</a></td></tr>
@@ -249,27 +250,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Time which elapsed after camera working with unit 0.1ms. </p>
-<dl class="section note"><dt>Note</dt><dd>time = time_retrieve + time_offset<br />
-time_ms = time / 10 </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classmynteye_1_1_camera.html#a97b050dc3f9e560bbd1ef9884dbd220d" title="Retrieves the IMU datas. ">Camera::RetrieveIMUData()</a> </dd></dl>
-
-</div>
-</div>
-<a id="a646a0945c59a9c2619963e2563e873c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a646a0945c59a9c2619963e2563e873c0">&#9670;&nbsp;</a></span>time_offset</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::int16_t mynteye::IMUData::time_offset</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Time offset before retrieve IMU data with unit 0.1ms. </p>
-<dl class="section note"><dt>Note</dt><dd>time_offset_ms = time_offset / 10 </dd></dl>
+<p>Time which elapsed after camera working, in unit 0.1ms. </p>
+<dl class="section note"><dt>Note</dt><dd>time = timestamp + time_offset </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classmynteye_1_1_camera.html#aca3445369b808defe0c3c0fb9adf5691" title="Retrieves the IMU datas. ">Camera::RetrieveIMUData()</a> </dd></dl>
 
 </div>
 </div>

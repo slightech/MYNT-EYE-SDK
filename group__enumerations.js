@@ -32,6 +32,12 @@ var group__enumerations =
       [ "PROC_POINT_CLOUD", "group__enumerations.html#gga0dea167e5d5d642c7fe391c7b9915504a1c7432c378d928436c67cb8b9e1ae727", null ],
       [ "PROC_LAST", "group__enumerations.html#gga0dea167e5d5d642c7fe391c7b9915504a35a745b3f419fcb1d3a0171144ed6c29", null ]
     ] ],
+    [ "Rate", "group__enumerations.html#gaa3506dfa6a72130ac3ba163c3d02f1e7", [
+      [ "RATE_50_FPS_500_HZ", "group__enumerations.html#ggaa3506dfa6a72130ac3ba163c3d02f1e7a6dea27323707f581ab0d8e8f251e6cf1", null ],
+      [ "RATE_25_FPS_500_HZ", "group__enumerations.html#ggaa3506dfa6a72130ac3ba163c3d02f1e7aab196508253fab4330c5d56b9b7b23b4", null ],
+      [ "RATE_10_FPS_200_HZ", "group__enumerations.html#ggaa3506dfa6a72130ac3ba163c3d02f1e7af7088e3c5702b1a2b9aada9ea52cb2b4", null ],
+      [ "RATE_LAST", "group__enumerations.html#ggaa3506dfa6a72130ac3ba163c3d02f1e7afcd22f044f1f8ec60f887a47b33bbf17", null ]
+    ] ],
     [ "View", "group__enumerations.html#ga57062eb3c0640960a2021f0031c2f643", [
       [ "VIEW_LEFT", "group__enumerations.html#gga57062eb3c0640960a2021f0031c2f643adfc5ccf8d2e121b7bb022c6eaa6f9c69", null ],
       [ "VIEW_RIGHT", "group__enumerations.html#gga57062eb3c0640960a2021f0031c2f643a8b1cfa73e4c839e48e3e0d368c041ee8", null ],

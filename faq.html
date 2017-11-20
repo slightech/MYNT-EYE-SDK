@@ -152,6 +152,10 @@ Warning: sn is empty.
 <p>The "Archive Name" marked with <code>-</code> means not supported. </p>
 </blockquote>
 <p>Then, download the SDK archive with the same architecture and install.</p>
+<h2>9) "what(): /dev/video0: select timeout" on Linux</h2>
+<p>If you run sample (e.g., <code>./samples/bin/camera</code>), but occurs this issue: </p><pre class="fragment">terminate called after throwing an instance of 'std::runtime_error'
+  what(): /dev/video0: select timeout
+</pre><p>Please confirm the index of your MYNT EYE camera, you could run <code>&lt;sdk&gt;/tools/list_devices</code> in the Terminal to see the indexes. See "&lt;sdk&gt;/samples/README.md" to learn more.</p>
 <h1>Known Issues</h1>
 <h2>1) Open MYNT EYE camera failed on macOS.</h2>
 <p>It may hang when open the camera, after you open and close it several times on macOS.</p>

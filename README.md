@@ -8,7 +8,21 @@
 
 ![](https://img.shields.io/badge/MYNT%20EYE%20SDK-Release%201.7-brightgreen.svg?style=flat)
 
-## [Getting Started](https://slightech.github.io/MYNT-EYE-SDK/getting_started.html)
+## [Documentation](https://slightech.github.io/MYNT-EYE-SDK)
+
+* [SDK Introduction](https://slightech.github.io/MYNT-EYE-SDK/index.html)
+* [Getting Started](https://slightech.github.io/MYNT-EYE-SDK/getting_started.html)
+* [Tutorials](https://slightech.github.io/MYNT-EYE-SDK/tutorials.html)
+    - [How to calibrate camera with OpenCV](https://slightech.github.io/MYNT-EYE-SDK/calibrate_with_opencv.html)
+    - [How to calibrate camera and IMU with Kalibr](https://slightech.github.io/MYNT-EYE-SDK/calibrate_with_kalibr.html)
+    - [How to upgrade firmware](https://slightech.github.io/MYNT-EYE-SDK/upgrade_firmware.html)
+* [API Documentation](https://slightech.github.io/MYNT-EYE-SDK/annotated.html)
+* [FAQ & Issues](https://slightech.github.io/MYNT-EYE-SDK/faq.html)
+* [Release Notes](https://slightech.github.io/MYNT-EYE-SDK/release_notes.html)
+* [Appendix: Build Platforms](https://slightech.github.io/MYNT-EYE-SDK/appendix_build_platforms.html)
+* [Appendix: Test Results](https://slightech.github.io/MYNT-EYE-SDK/appendix_test_results.html)
+
+> [User Manual PDF](https://github.com/slightech/MYNT-EYE-SDK/raw/master/doc/mynteye-apidoc-1.7.pdf)
 
 Download the latest SDK from our online disks: [Google Drive][], [百度网盘][].
 
@@ -54,22 +68,6 @@ Integrations let you use the MYNT EYE camera in some different environments.
 The introduction of firmwares is [here](https://github.com/slightech/MYNT-EYE-SDK/tree/master/firmware). If run with SLAM, "25 fps 500 Hz" is more suitable.
 
 > All firmwares are stored in `firmware` directory of our online disks: [Google Drive][], [百度网盘][].
-
-## [Documentation](https://slightech.github.io/MYNT-EYE-SDK)
-
-* [SDK Introduction](https://slightech.github.io/MYNT-EYE-SDK/index.html)
-* [Getting Started](https://slightech.github.io/MYNT-EYE-SDK/getting_started.html)
-* [Tutorials](https://slightech.github.io/MYNT-EYE-SDK/tutorials.html)
-    - [How to calibrate camera with OpenCV](https://slightech.github.io/MYNT-EYE-SDK/calibrate_with_opencv.html)
-    - [How to calibrate camera and IMU with Kalibr](https://slightech.github.io/MYNT-EYE-SDK/calibrate_with_kalibr.html)
-    - [How to upgrade firmware](https://slightech.github.io/MYNT-EYE-SDK/upgrade_firmware.html)
-* [API Documentation](https://slightech.github.io/MYNT-EYE-SDK/annotated.html)
-* [FAQ & Issues](https://slightech.github.io/MYNT-EYE-SDK/faq.html)
-* [Release Notes](https://slightech.github.io/MYNT-EYE-SDK/release_notes.html)
-* [Appendix: Build Platforms](https://slightech.github.io/MYNT-EYE-SDK/appendix_build_platforms.html)
-* [Appendix: Test Results](https://slightech.github.io/MYNT-EYE-SDK/appendix_test_results.html)
-
-> [PDF](https://github.com/slightech/MYNT-EYE-SDK/raw/master/doc/mynteye-apidoc-1.7.pdf)
 
 ## Archives
 

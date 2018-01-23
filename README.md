@@ -6,7 +6,7 @@
 
 # MYNT EYE SDK
 
-![](https://img.shields.io/badge/MYNT%20EYE%20SDK-Release%201.7-brightgreen.svg?style=flat)
+![](https://img.shields.io/badge/MYNT%20EYE%20SDK-Release%201.8-brightgreen.svg?style=flat)
 
 ## [Documentation](https://slightech.github.io/MYNT-EYE-SDK)
 
@@ -22,7 +22,7 @@
 * [Appendix: Build Platforms](https://slightech.github.io/MYNT-EYE-SDK/appendix_build_platforms.html)
 * [Appendix: Test Results](https://slightech.github.io/MYNT-EYE-SDK/appendix_test_results.html)
 
-> [User Manual PDF](https://github.com/slightech/MYNT-EYE-SDK/raw/master/doc/mynteye-apidoc-1.7.pdf)
+> [User Manual PDF](https://github.com/slightech/MYNT-EYE-SDK/raw/master/doc/mynteye-apidoc-1.8.pdf)
 
 Download the latest SDK from our online disks: [Google Drive][], [百度网盘][].
 
@@ -105,7 +105,7 @@ Here are missing things on some platforms, marked with `N/A`.
   </tr>
 </table>
 
-### Release 1.7
+### Release 1.8
 
 <table>
   <tr>
@@ -114,63 +114,73 @@ Here are missing things on some platforms, marked with `N/A`.
     <td>MD5 Checksum</td>
   </tr>
   <tr>
-    <td rowspan="4">Linux</td>
+    <td rowspan="5">Linux</td>
     <td rowspan="2">GCC4</td>
-    <td>mynteye-1.7-linux-x64-gcc4-opencv-3.2.0.tar.gz</td>
-    <td>23.81 MB</td>
-    <td>8ef8e2ab53a51627a9bb6cd508c69c5e</td>
+    <td>mynteye-1.8-linux-x64-gcc4-opencv-3.4.0.tar.gz</td>
+    <td>24.1 MB</td>
+    <td>7ee313d8ad9ae93a248c9e98a4a491c9</td>
   </tr>
   <tr>
-    <td>mynteye-1.7-linux-x64-gcc4-opencv-2.4.13.3.tar.gz</td>
-    <td>23.81 MB</td>
-    <td>1bb9cbdf926db137b0ed3b49ed5ca91a</td>
+    <td>mynteye-1.8-linux-x64-gcc4-opencv-2.4.13.5.tar.gz</td>
+    <td>24.11 MB</td>
+    <td>baf046f6f0119d801de515c8654445d6</td>
   </tr>
   <tr>
-    <td rowspan="2">GCC5</td>
-    <td>mynteye-1.7-linux-x64-gcc5-opencv-3.2.0.tar.gz</td>
-    <td>23.93 MB</td>
-    <td>6c0693306f55f13e492ff13793f678f0</td>
+    <td rowspan="3">GCC5</td>
+    <td>mynteye-1.8-linux-x64-gcc5-opencv-3.4.0.tar.gz</td>
+    <td>24.22 MB</td>
+    <td>a2e62563faa5928efba4e4e89bfaac5c</td>
   </tr>
   <tr>
-    <td>mynteye-1.7-linux-x64-gcc5-opencv-2.4.13.3.tar.gz</td>
-    <td>23.94 MB</td>
-    <td>867eb5a8b04e7c602334df69bbe7c3c5</td>
+    <td>mynteye-1.8-linux-x64-gcc5-opencv-2.4.13.5.tar.gz</td>
+    <td>24.23 MB</td>
+    <td>26a951206efd67f53e642ccda464b881</td>
+  </tr>
+  <tr>
+    <td>mynteye-1.8-linux-x64-gcc5-opencv-3.3.1-ros-kinetic.tar.gz</td>
+    <td>2.9 MB</td>
+    <td>5065f625bff207651f07ce9c0e708b72</td>
   </tr>
   <tr>
     <td rowspan="2">macOS</td>
     <td rowspan="2"></td>
-    <td>mynteye-1.7-mac-x64-opencv-3.2.0.tar.gz</td>
-    <td>18.26 MB</td>
-    <td>e647b92d4fcefb4d5659f39b301ad7c5</td>
+    <td>mynteye-1.8-mac-x64-opencv-3.4.0.tar.gz</td>
+    <td>18.29 MB</td>
+    <td>8658180bfcdd664403886776b06058ec</td>
   </tr>
   <tr>
-    <td>mynteye-1.7-mac-x64-opencv-2.4.13.3.tar.gz</td>
-    <td>18.24 MB</td>
-    <td>e49b433c08be59e604d7b0191984f070</td>
+    <td>mynteye-1.8-mac-x64-opencv-2.4.13.5.tar.gz</td>
+    <td>18.28 MB</td>
+    <td>eeec67da3dbc9af460fb63defbf934ed</td>
   </tr>
   <tr>
     <td rowspan="2">Windows</td>
     <td rowspan="2">MSVC</td>
-    <td>mynteye-1.7-win-x64-opencv-3.2.0.exe</td>
-    <td>44.73 MB</td>
-    <td>213dc75dd35281fba282181817ae5567</td>
+    <td>mynteye-1.8-win-x64-opencv-3.4.0.exe</td>
+    <td>54.77 MB</td>
+    <td>bf2a7c31848642163440a3230e8e8749</td>
   </tr>
   <tr>
-    <td>mynteye-1.7-win-x64-opencv-3.2.0.tar.gz</td>
-    <td>44.21 MB</td>
-    <td>279ef04dc49bef23c70179ce105ab423</td>
+    <td>mynteye-1.8-win-x64-opencv-3.4.0.tar.gz</td>
+    <td>54.27 MB</td>
+    <td>ec3230cf99bc562a78f0524e271a8838</td>
   </tr>
   <tr>
-    <td rowspan="2">Tegra</td>
-    <td rowspan="2">TX1/TX2</td>
-    <td>mynteye-1.7-tegra-aarch64-gcc5-opencv-3.2.0.tar.gz</td>
-    <td>2.38 MB</td>
-    <td>111b3b6300739c51ab0d3d9d35c8c2e7</td>
+    <td rowspan="3">Tegra</td>
+    <td rowspan="3">TX1/TX2</td>
+    <td>mynteye-1.8-tegra-aarch64-gcc5-opencv-3.4.0.tar.gz</td>
+    <td>2.67 MB</td>
+    <td>1ca9e0ab562747d3ae259f36b9c9a932</td>
   </tr>
   <tr>
-    <td>mynteye-1.7-tegra-aarch64-gcc5-opencv-2.4.13.1.tar.gz</td>
-    <td>2.38 MB</td>
-    <td>2767c79b6f8c4ae84433b5a93cebbe8f</td>
+    <td>mynteye-1.8-tegra-aarch64-gcc5-opencv-2.4.13.1.tar.gz</td>
+    <td>2.68 MB</td>
+    <td>51e58103fd3d003a3c713e897906d344</td>
+  </tr>
+  <tr>
+    <td>mynteye-1.8-tegra-aarch64-gcc5-opencv-3.3.1-ros-kinetic.tar.gz</td>
+    <td>2.67 MB</td>
+    <td>1c96f964fa575b55d2d253bc73014395</td>
   </tr>
 </table>
 

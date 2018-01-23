@@ -1,6 +1,7 @@
 var searchData=
 [
   ['error_5fcamera_5fgrab_5ffailed',['ERROR_CAMERA_GRAB_FAILED',['../group__enumerations.html#ggac366e337c9a6776d37d599076a014d26a13694614a8abfbf841ba226ffab6d024',1,'mynteye']]],
+  ['error_5fcamera_5fgrab_5ftimeout',['ERROR_CAMERA_GRAB_TIMEOUT',['../group__enumerations.html#ggac366e337c9a6776d37d599076a014d26a78e076682b07256b1dd568032d597020',1,'mynteye']]],
   ['error_5fcamera_5fnot_5fopened',['ERROR_CAMERA_NOT_OPENED',['../group__enumerations.html#ggac366e337c9a6776d37d599076a014d26aed5028bc06e772a173e8e1e2c1d60483',1,'mynteye']]],
   ['error_5fcamera_5fopen_5ffailed',['ERROR_CAMERA_OPEN_FAILED',['../group__enumerations.html#ggac366e337c9a6776d37d599076a014d26aa66914b2a75de4d5e5f1516354b43df4',1,'mynteye']]],
   ['error_5fcamera_5fretrieve_5ffailed',['ERROR_CAMERA_RETRIEVE_FAILED',['../group__enumerations.html#ggac366e337c9a6776d37d599076a014d26a00c7f8596ed89b88d76893db722f6cfc',1,'mynteye']]],

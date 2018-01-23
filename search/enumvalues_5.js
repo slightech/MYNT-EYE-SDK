@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['rate_5f10_5ffps_5f200_5fhz',['RATE_10_FPS_200_HZ',['../group__enumerations.html#ggaa3506dfa6a72130ac3ba163c3d02f1e7af7088e3c5702b1a2b9aada9ea52cb2b4',1,'mynteye']]],
-  ['rate_5f25_5ffps_5f500_5fhz',['RATE_25_FPS_500_HZ',['../group__enumerations.html#ggaa3506dfa6a72130ac3ba163c3d02f1e7aab196508253fab4330c5d56b9b7b23b4',1,'mynteye']]],
-  ['rate_5f50_5ffps_5f500_5fhz',['RATE_50_FPS_500_HZ',['../group__enumerations.html#ggaa3506dfa6a72130ac3ba163c3d02f1e7a6dea27323707f581ab0d8e8f251e6cf1',1,'mynteye']]],
-  ['rate_5flast',['RATE_LAST',['../group__enumerations.html#ggaa3506dfa6a72130ac3ba163c3d02f1e7afcd22f044f1f8ec60f887a47b33bbf17',1,'mynteye']]]
+  ['mode_5fauto_5fdetect',['MODE_AUTO_DETECT',['../group__enumerations.html#gga4cdd7291a2eef75708dd0ba9ae28ed9ea9e49e344c24e9ae4ba4226bf9ad3f051',1,'mynteye']]],
+  ['mode_5fcpu',['MODE_CPU',['../group__enumerations.html#gga4cdd7291a2eef75708dd0ba9ae28ed9ea80673bfa75a05d42bfe89031627a7b08',1,'mynteye']]],
+  ['mode_5fgpu',['MODE_GPU',['../group__enumerations.html#gga4cdd7291a2eef75708dd0ba9ae28ed9ea8f1350e28934967e5cc4c1936fcde53a',1,'mynteye']]],
+  ['mode_5flast',['MODE_LAST',['../group__enumerations.html#gga4cdd7291a2eef75708dd0ba9ae28ed9eae533a0424ad39ec8e1bcdc0ced3177d4',1,'mynteye']]]
 ];

@@ -9,7 +9,7 @@ var searchData=
   ['onprocesspointcloud',['OnProcessPointCloud',['../classmynteye_1_1_plugin.html#ad55cd2b2291fc90eb9b4ee4f6b2be756',1,'mynteye::Plugin']]],
   ['onprocessrecify',['OnProcessRecify',['../classmynteye_1_1_plugin.html#a9f0d630f843a56abdce24b0b604d5804',1,'mynteye::Plugin']]],
   ['onretrieveimage',['OnRetrieveImage',['../classmynteye_1_1_plugin.html#aeefc2d528cc80091241b31d78c6bfb2b',1,'mynteye::Plugin']]],
-  ['onretrieveimudata',['OnRetrieveIMUData',['../classmynteye_1_1_plugin.html#a3ecdbdf4e9ce3d3181ed55f5f74dd5c4',1,'mynteye::Plugin']]],
+  ['onretrieveimudata',['OnRetrieveIMUData',['../classmynteye_1_1_plugin.html#a9537935615222554c6f753765164f5d5',1,'mynteye::Plugin']]],
   ['open',['Open',['../classmynteye_1_1_camera.html#a84b68305d0bdb2eeab196ad02677fbe5',1,'mynteye::Camera']]],
   ['operator_21_3d',['operator!=',['../structmynteye_1_1_resolution.html#a2e02d54cf3d78663ae69bce4fa3c51af',1,'mynteye::Resolution']]],
   ['operator_3d_3d',['operator==',['../structmynteye_1_1_resolution.html#a494332522f21f84b2aa0b4d1f6904d9b',1,'mynteye::Resolution']]]

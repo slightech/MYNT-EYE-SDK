@@ -9,5 +9,5 @@ var classmynteye_1_1_plugin =
     [ "OnProcessPointCloud", "classmynteye_1_1_plugin.html#ad55cd2b2291fc90eb9b4ee4f6b2be756", null ],
     [ "OnProcessRecify", "classmynteye_1_1_plugin.html#a9f0d630f843a56abdce24b0b604d5804", null ],
     [ "OnRetrieveImage", "classmynteye_1_1_plugin.html#aeefc2d528cc80091241b31d78c6bfb2b", null ],
-    [ "OnRetrieveIMUData", "classmynteye_1_1_plugin.html#a3ecdbdf4e9ce3d3181ed55f5f74dd5c4", null ]
+    [ "OnRetrieveIMUData", "classmynteye_1_1_plugin.html#a9537935615222554c6f753765164f5d5", null ]
 ];

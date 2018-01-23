@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['rate',['Rate',['../group__enumerations.html#gaa3506dfa6a72130ac3ba163c3d02f1e7',1,'mynteye']]]
+  ['mode',['Mode',['../group__enumerations.html#ga4cdd7291a2eef75708dd0ba9ae28ed9e',1,'mynteye']]]
 ];

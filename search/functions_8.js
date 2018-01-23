@@ -1,19 +1,8 @@
 var searchData=
 [
-  ['save',['Save',['../structmynteye_1_1_calibration_parameters.html#a00914580777f776d347abb28755655d0',1,'mynteye::CalibrationParameters::Save()'],['../structmynteye_1_1_camera_information.html#a1d54d4b365744808023b484f019c4133',1,'mynteye::CameraInformation::Save()'],['../structmynteye_1_1_init_parameters.html#a929d0c63990fd4237ac96d9733f05457',1,'mynteye::InitParameters::Save()']]],
-  ['setautoexposureenabled',['SetAutoExposureEnabled',['../classmynteye_1_1_camera.html#a57933c0f4ac84af89ac8f7924f1cb7bf',1,'mynteye::Camera']]],
-  ['setbrightness',['SetBrightness',['../classmynteye_1_1_camera.html#afd5a52ae0d41524d4a201992a1083ba2',1,'mynteye::Camera']]],
-  ['setcontrast',['SetContrast',['../classmynteye_1_1_camera.html#ac482e6f5472e2f0ea00a5d1b7ea9b548',1,'mynteye::Camera']]],
-  ['setdepthmapprocesscallbacks',['SetDepthMapProcessCallbacks',['../classmynteye_1_1_camera.html#a90951f016d51689b5105214e0e0dd017',1,'mynteye::Camera']]],
-  ['setdesiredbrightness',['SetDesiredBrightness',['../classmynteye_1_1_camera.html#a0a833b69ea7716be5863d4ea66b013ea',1,'mynteye::Camera']]],
-  ['setgain',['SetGain',['../classmynteye_1_1_camera.html#a44bac0e0a3a2f429cdaf889ec425b18f',1,'mynteye::Camera']]],
-  ['setgraberrorcallback',['SetGrabErrorCallback',['../classmynteye_1_1_camera.html#a081e00577fd1576c2511780b92e1ac2d',1,'mynteye::Camera']]],
-  ['setgrabprocesscallbacks',['SetGrabProcessCallbacks',['../classmynteye_1_1_camera.html#a55ca13c74cb24b389a07291a339a79c9',1,'mynteye::Camera']]],
-  ['setmaxexposuretime',['SetMaxExposureTime',['../classmynteye_1_1_camera.html#a300fbbe871cd5beeb405c72b1b1bfa91',1,'mynteye::Camera']]],
-  ['setmaxgain',['SetMaxGain',['../classmynteye_1_1_camera.html#af9f47b23c9d67c62c2da7551a4f6fc34',1,'mynteye::Camera']]],
-  ['setmode',['SetMode',['../classmynteye_1_1_camera.html#ab453b92d74e74d3a1bb08d3c64d8ae73',1,'mynteye::Camera']]],
-  ['setpointcloudprocesscallbacks',['SetPointCloudProcessCallbacks',['../classmynteye_1_1_camera.html#a2576593f368f5370375a7b8a9ebac6b9',1,'mynteye::Camera']]],
-  ['setrate',['SetRate',['../classmynteye_1_1_camera.html#ac24fd294d9b8f4e893a64faad53132be',1,'mynteye::Camera']]],
-  ['setrectifyprocesscallbacks',['SetRectifyProcessCallbacks',['../classmynteye_1_1_camera.html#a90175be909f92add012ec759160df91b',1,'mynteye::Camera']]],
-  ['setscale',['SetScale',['../classmynteye_1_1_camera.html#a02e8dbd030a1977540ccce575f4bf591',1,'mynteye::Camera']]]
+  ['requesterasechip',['RequestEraseChip',['../classmynteye_1_1_camera.html#a9873d6bea6c69bee05ec1bc58476ee74',1,'mynteye::Camera']]],
+  ['requestzerodriftcalibration',['RequestZeroDriftCalibration',['../classmynteye_1_1_camera.html#ab43692baea15fec24ce1b25045455017',1,'mynteye::Camera']]],
+  ['resolution',['Resolution',['../structmynteye_1_1_resolution.html#a91debf041b30866ca8a7dbd1a9087686',1,'mynteye::Resolution']]],
+  ['retrieveimage',['RetrieveImage',['../classmynteye_1_1_camera.html#a46cc2f745e4af52ca000301464217036',1,'mynteye::Camera']]],
+  ['retrieveimudata',['RetrieveIMUData',['../classmynteye_1_1_camera.html#aca3445369b808defe0c3c0fb9adf5691',1,'mynteye::Camera::RetrieveIMUData(std::vector&lt; IMUData &gt; &amp;imudatas)'],['../classmynteye_1_1_camera.html#a97b050dc3f9e560bbd1ef9884dbd220d',1,'mynteye::Camera::RetrieveIMUData(std::vector&lt; IMUData &gt; &amp;imudatas, std::uint32_t &amp;timestamp)']]]
 ];

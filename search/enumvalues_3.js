@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['mode_5fauto_5fdetect',['MODE_AUTO_DETECT',['../group__enumerations.html#gga4cdd7291a2eef75708dd0ba9ae28ed9ea9e49e344c24e9ae4ba4226bf9ad3f051',1,'mynteye']]],
-  ['mode_5fcpu',['MODE_CPU',['../group__enumerations.html#gga4cdd7291a2eef75708dd0ba9ae28ed9ea80673bfa75a05d42bfe89031627a7b08',1,'mynteye']]],
-  ['mode_5fgpu',['MODE_GPU',['../group__enumerations.html#gga4cdd7291a2eef75708dd0ba9ae28ed9ea8f1350e28934967e5cc4c1936fcde53a',1,'mynteye']]],
-  ['mode_5flast',['MODE_LAST',['../group__enumerations.html#gga4cdd7291a2eef75708dd0ba9ae28ed9eae533a0424ad39ec8e1bcdc0ced3177d4',1,'mynteye']]]
+  ['fw_5fgeneral',['FW_GENERAL',['../group__enumerations.html#gga102a03fbb9f94126e796f7678e5e7351ac5118286ac64e13a238af2d19a98aca4',1,'mynteye']]],
+  ['fw_5flast',['FW_LAST',['../group__enumerations.html#gga102a03fbb9f94126e796f7678e5e7351a2fa45bf98ef9a431b90e306b18235eb9',1,'mynteye']]],
+  ['fw_5fmore_5fthan_5f0105',['FW_MORE_THAN_0105',['../group__enumerations.html#gga102a03fbb9f94126e796f7678e5e7351a6440701fe9c813a45ed2ce2bd9f41cf1',1,'mynteye']]],
+  ['fw_5fno_5fmore_5fthan_5f0105',['FW_NO_MORE_THAN_0105',['../group__enumerations.html#gga102a03fbb9f94126e796f7678e5e7351a78be10003daba1f5316a88968a7dffd9',1,'mynteye']]]
 ];

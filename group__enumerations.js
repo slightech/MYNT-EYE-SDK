@@ -1,5 +1,17 @@
 var group__enumerations =
 [
+    [ "ControlProperty", "group__enumerations.html#gaecc7021b55044813374a04a29a2a5492", [
+      [ "CT_PROP_AUTO_EXPOSURE_MODE", "group__enumerations.html#ggaecc7021b55044813374a04a29a2a5492a2a0c48600744a9978c08dcb32565e8b9", null ],
+      [ "CT_PROP_BRIGHTNESS", "group__enumerations.html#ggaecc7021b55044813374a04a29a2a5492ac9a755e3eeb07ac24b23d5df5c4a436f", null ],
+      [ "CT_PROP_CONTRAST", "group__enumerations.html#ggaecc7021b55044813374a04a29a2a5492ac34de7cd37579bfa432c9fa3fbc88d92", null ],
+      [ "CT_PROP_GAIN", "group__enumerations.html#ggaecc7021b55044813374a04a29a2a5492a01e74ebcd0d53603bf4233a9699e8eac", null ],
+      [ "CT_PROP_DESIRED_BRIGHTNESS", "group__enumerations.html#ggaecc7021b55044813374a04a29a2a5492ace64f119967ae3c78893c4d3265e1344", null ],
+      [ "CT_PROP_MAX_EXPOSURE_TIME", "group__enumerations.html#ggaecc7021b55044813374a04a29a2a5492a51c44d341c8234b75a63582b048bc768", null ],
+      [ "CT_PROP_MAX_GAIN", "group__enumerations.html#ggaecc7021b55044813374a04a29a2a5492a4ee977adb83d9d74bfc24284014816ae", null ],
+      [ "CT_PROP_IR_CONTROL", "group__enumerations.html#ggaecc7021b55044813374a04a29a2a5492aa965a135581f3f9827381c91805e60af", null ],
+      [ "CT_PROP_HDR", "group__enumerations.html#ggaecc7021b55044813374a04a29a2a5492a83066c1fa84a36f0d5fbb7adc37a03b9", null ],
+      [ "CT_PROP_LAST", "group__enumerations.html#ggaecc7021b55044813374a04a29a2a5492a9f9899ec3f0a3123ddb254144ceb40f9", null ]
+    ] ],
     [ "ErrorCode", "group__enumerations.html#gac366e337c9a6776d37d599076a014d26", [
       [ "SUCCESS", "group__enumerations.html#ggac366e337c9a6776d37d599076a014d26a5655a564f6f24ee95f6946126b920674", null ],
       [ "ERROR_FAILURE", "group__enumerations.html#ggac366e337c9a6776d37d599076a014d26aaa2b7ae1ae12980cee5078d70210a16f", null ],
@@ -7,10 +19,17 @@ var group__enumerations =
       [ "ERROR_CAMERA_OPEN_FAILED", "group__enumerations.html#ggac366e337c9a6776d37d599076a014d26aa66914b2a75de4d5e5f1516354b43df4", null ],
       [ "ERROR_CAMERA_NOT_OPENED", "group__enumerations.html#ggac366e337c9a6776d37d599076a014d26aed5028bc06e772a173e8e1e2c1d60483", null ],
       [ "ERROR_CAMERA_GRAB_FAILED", "group__enumerations.html#ggac366e337c9a6776d37d599076a014d26a13694614a8abfbf841ba226ffab6d024", null ],
+      [ "ERROR_CAMERA_GRAB_TIMEOUT", "group__enumerations.html#ggac366e337c9a6776d37d599076a014d26a78e076682b07256b1dd568032d597020", null ],
       [ "ERROR_CAMERA_RETRIEVE_FAILED", "group__enumerations.html#ggac366e337c9a6776d37d599076a014d26a00c7f8596ed89b88d76893db722f6cfc", null ],
       [ "ERROR_CAMERA_RETRIEVE_NOT_READY", "group__enumerations.html#ggac366e337c9a6776d37d599076a014d26aca8c39430459abd86528c8fee3af44d0", null ],
       [ "ERROR_FEATURE_NOT_ACTIVATED", "group__enumerations.html#ggac366e337c9a6776d37d599076a014d26aa46927f5f37e0da0e00b0b2fc96eb4c8", null ],
       [ "ERROR_LAST", "group__enumerations.html#ggac366e337c9a6776d37d599076a014d26a2fe3edddaa0a596c745e3387918e8f3d", null ]
+    ] ],
+    [ "FwDevide", "group__enumerations.html#ga102a03fbb9f94126e796f7678e5e7351", [
+      [ "FW_GENERAL", "group__enumerations.html#gga102a03fbb9f94126e796f7678e5e7351ac5118286ac64e13a238af2d19a98aca4", null ],
+      [ "FW_NO_MORE_THAN_0105", "group__enumerations.html#gga102a03fbb9f94126e796f7678e5e7351a78be10003daba1f5316a88968a7dffd9", null ],
+      [ "FW_MORE_THAN_0105", "group__enumerations.html#gga102a03fbb9f94126e796f7678e5e7351a6440701fe9c813a45ed2ce2bd9f41cf1", null ],
+      [ "FW_LAST", "group__enumerations.html#gga102a03fbb9f94126e796f7678e5e7351a2fa45bf98ef9a431b90e306b18235eb9", null ]
     ] ],
     [ "Gravity", "group__enumerations.html#ga4d1c4c02cb7ae5d5668c1e12fe1a6689", [
       [ "TOP_LEFT", "group__enumerations.html#gga4d1c4c02cb7ae5d5668c1e12fe1a6689a6ef7c1e163228ec9a253c692e6d5278d", null ],

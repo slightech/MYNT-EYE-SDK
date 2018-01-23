@@ -12,41 +12,49 @@ About how to upgrade firmware, please see [Tutorials](https://slightech.github.i
   <tr>
     <td>Name</td>
     <td>Version</td>
+    <td>Framerate</td>
     <td>Size</td>
     <td>MD5</td>
   </tr>
   <tr>
-    <td>mynteye_0105_1711181427.img</td>
+    <td>mynteye_0106_<br />1801191652.img</td>
+    <td>0106</td>
+    <td>25 fps 500 Hz<br />50 fps 500 Hz<br />10 fps 200 Hz</td>
+    <td>147.97 KB</td>
+    <td>becf2d217012b384c22c6310d5896db8</td>
+  </tr>
+  <tr>
+    <td>mynteye_0105_<br />1711181427.img</td>
     <td>0105</td>
+    <td>25 fps 500 Hz<br />50 fps 500 Hz<br />10 fps 200 Hz</td>
     <td>137.82 KB</td>
     <td>9b48050e8599493c261ff6b0645c3eb8</td>
   </tr>
   <tr>
-    <td>mynteye_0104_1711031837.img</td>
+    <td>mynteye_0104_<br />1711031837.img</td>
     <td>0104</td>
+    <td>25 fps 500 Hz<br />50 fps 500 Hz<br />10 fps 200 Hz</td>
     <td>136.48 KB</td>
     <td>837675c714ab6cf1109b5c17ad34b1c6</td>
   </tr>
+    <td>mynteye_0103_<br />25fps_500hz.img</td>
+    <td>0103</td>
+    <td>25 fps 500 Hz</td>
+    <td>129.21 KB</td>
+    <td>85158ef5b55f618e8f0ea674be8bc3b1</td>
   <tr>
-    <td>mynteye_0102_1708101513.img</td>
+    <td>mynteye_0102_<br />1708101513.img</td>
     <td>0102</td>
+    <td>60 fps 500 Hz</td>
     <td>131.59 KB</td>
     <td>86ef4069eee6b96bf5325cae8809b904</td>
   </tr>
   <tr>
-    <td>mynteye_0101_1706151738.img</td>
+    <td>mynteye_0101_<br />1706151738.img</td>
     <td>0101</td>
+    <td>60 fps 500 Hz</td>
     <td>132.53 KB</td>
     <td>49041624e6dca608e0c6610a5ba16a21</td>
-  </tr>
-  <tr>
-    <th colspan="4">Special Builds</th>
-  </tr>
-  <tr>
-    <td>mynteye_0103_for_slam.img</td>
-    <td>0103<br />25 fps, 500 Hz</td>
-    <td>129.21 KB</td>
-    <td>85158ef5b55f618e8f0ea674be8bc3b1</td>
   </tr>
 </table>
 
@@ -69,6 +77,10 @@ About how to upgrade firmware, please see [Tutorials](https://slightech.github.i
 
 ## Release Notes
 
+### 0106
+
+* Add IR, HDR control api.
+
 ### 0105
 
 * Add camera control features.
@@ -81,7 +93,7 @@ About how to upgrade firmware, please see [Tutorials](https://slightech.github.i
     - Control gain, brightness, contrast and auto-exposure.
     - Request zero drift calibration.
 
-### 0103 for SLAM
+### 0103
 
 * A test version specially built for SLAM, such as VINS etc.
     - The frame rate is 25 fps, and the IMU frequency is 500 Hz.

@@ -44,7 +44,7 @@ Samples about how to use MYNT EYE camera in some popular projects.
 * [MYNT-EYE-VINS-Sample](https://github.com/slightech/MYNT-EYE-VINS-Sample)
 * [MYNT-EYE-VIORB-Sample](https://github.com/slightech/MYNT-EYE-VIORB-Sample)
 
-Please use "25 fps 500 Hz" firmware that is more suitable for these projects.
+Please use "25 fps 500 Hz" settings which is more suitable for these projects.
 
 ### Videos
 
@@ -65,7 +65,7 @@ Integrations let you use the MYNT EYE camera in some different environments.
 
 ## [Firmwares](https://github.com/slightech/MYNT-EYE-SDK/tree/master/firmware)
 
-The introduction of firmwares is [here](https://github.com/slightech/MYNT-EYE-SDK/tree/master/firmware). If run with SLAM, "25 fps 500 Hz" is more suitable.
+The introduction of firmwares is [here](https://github.com/slightech/MYNT-EYE-SDK/tree/master/firmware). Please keep updating the latest version firmware for the best result.
 
 > All firmwares are stored in `firmware` directory of our online disks: [Google Drive][], [百度网盘][].
 

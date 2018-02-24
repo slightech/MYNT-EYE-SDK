@@ -69,6 +69,13 @@ The introduction of firmwares is [here](https://github.com/slightech/MYNT-EYE-SD
 
 > All firmwares are stored in `firmware` directory of our online disks: [Google Drive][], [百度网盘][].
 
+## 3D Models
+
+* Product Case for 3D Printing
+    - mynt_eye_s_no_ir_case_v1.stp.stl
+
+> All 3D models are stored in `3dmodel` directory of our online disks: [Google Drive][], [百度网盘][].
+
 ## Archives
 
 This section lists archived and obsolete versions of the MYNT EYE SDK.

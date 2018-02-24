@@ -217,7 +217,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:a7e617ba757d7e1be18fef7d172436e1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the lastest hardware timestamp which indicates when retrieved.  <a href="#a7e617ba757d7e1be18fef7d172436e1f">More...</a><br /></td></tr>
 <tr class="separator:a7e617ba757d7e1be18fef7d172436e1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac90ddbc302193b502757507075485b99"><td class="memItemLeft" align="right" valign="top">std::uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmynteye_1_1_camera.html#ac90ddbc302193b502757507075485b99">GetExposureTime</a> ()</td></tr>
-<tr class="memdesc:ac90ddbc302193b502757507075485b99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the time of exposure.  <a href="#ac90ddbc302193b502757507075485b99">More...</a><br /></td></tr>
+<tr class="memdesc:ac90ddbc302193b502757507075485b99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the exposure time.  <a href="#ac90ddbc302193b502757507075485b99">More...</a><br /></td></tr>
 <tr class="separator:ac90ddbc302193b502757507075485b99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab62ec8aa076566ef379088b218cf009e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmynteye_1_1_resolution.html">Resolution</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmynteye_1_1_camera.html#ab62ec8aa076566ef379088b218cf009e">GetResolution</a> ()</td></tr>
 <tr class="memdesc:ab62ec8aa076566ef379088b218cf009e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current image size.  <a href="#ab62ec8aa076566ef379088b218cf009e">More...</a><br /></td></tr>
@@ -456,9 +456,21 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the time of exposure. </p>
-<dl class="section note"><dt>Note</dt><dd>The value must be in [0,240]. It represents different times at different frame rates. The maximum value "240" at the frame rate 10/25/50 fps represents 14.99/18.03/17.81 ms. </dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>the time of exposure. </dd></dl>
+<p>Returns the exposure time. </p>
+<dl class="section note"><dt>Note</dt><dd>The value range is <code>[1,480]</code>. It means the <code>[min,max]</code> of different frame rates. </dd>
+<dd>
+<table class="doxtable">
+<tr>
+<th>rate</th><th>max</th><th>the exposure time </th></tr>
+<tr>
+<td>10 fps</td><td>14.99 ms</td><td><a class="el" href="classmynteye_1_1_camera.html#ac90ddbc302193b502757507075485b99" title="Returns the exposure time. ">GetExposureTime()</a> * 14.99 / 480 ms </td></tr>
+<tr>
+<td>25 fps</td><td>18.03 ms</td><td><a class="el" href="classmynteye_1_1_camera.html#ac90ddbc302193b502757507075485b99" title="Returns the exposure time. ">GetExposureTime()</a> * 18.03 / 480 ms </td></tr>
+<tr>
+<td>50 fps</td><td>17.81 ms</td><td><a class="el" href="classmynteye_1_1_camera.html#ac90ddbc302193b502757507075485b99" title="Returns the exposure time. ">GetExposureTime()</a> * 17.81 / 480 ms </td></tr>
+</table>
+</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the exposure time. </dd></dl>
 
 </div>
 </div>

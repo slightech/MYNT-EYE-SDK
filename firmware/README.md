@@ -17,11 +17,11 @@ About how to upgrade firmware, please see [Tutorials](https://slightech.github.i
     <td>MD5</td>
   </tr>
   <tr>
-    <td>mynteye_0106_<br />1801191652.img</td>
+    <td>mynteye_0106_<br />1803201637.img</td>
     <td>0106</td>
     <td>25 fps 500 Hz<br />50 fps 500 Hz<br />10 fps 200 Hz</td>
-    <td>147.97 KB</td>
-    <td>becf2d217012b384c22c6310d5896db8</td>
+    <td>148.4 KB</td>
+    <td>1d60d6c9e974e76cac857ed369fb2ed8</td>
   </tr>
   <tr>
     <td>mynteye_0105_<br />1711181427.img</td>

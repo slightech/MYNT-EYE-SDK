@@ -103,34 +103,30 @@ $(document).ready(function(){initNavTree('index.html','');});
 <div class="title">SDK Introduction </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><div class="image">
-<img src="sdk_introduction.png" alt="sdk_introduction.png"/>
-<div class="caption">
-SDK Structure</div></div>
- <h2>SDK Files</h2>
+<div class="textblock"><h2>SDK Structure</h2>
 <p>The SDK could be installed to a arbitrary location. Just run the install script under the SDK directory.</p>
-<p>The SDK files falls into the following directories:</p>
+<p>The SDK files contain following directories:</p>
 <ul>
-<li><b>apps/</b> contains binary executables of some MYNT EYE camera apps<ul>
-<li><b>3rdparty/</b> contains the apps' dependencies</li>
+<li><b>apps/</b> MYNT EYE camera demo apps source code<ul>
+<li><b>3rdparty/</b> Apps dependencies</li>
 </ul>
 </li>
-<li><b>bin/</b> contains the windows DLLs required to use the SDK (Windows only)</li>
-<li><b>doc/</b> contains documentations and licence<ul>
-<li><b>api/</b> contains the API documentation on Web format</li>
-<li><b>license/</b> contains the licenses of the SDK and its third-parties'</li>
+<li><b>bin/</b> Windows dlls files required by Windows SDK</li>
+<li><b>doc/</b> Documentations and licences<ul>
+<li><b>api/</b> API documentation on Web format</li>
+<li><b>license/</b> Licenses of the SDK and its third-parties</li>
 </ul>
 </li>
-<li><b>deps/</b> contains samples and SDK (OpenCV) dependencies (Windows only)</li>
-<li><b>include/</b> contains C/C++ header files</li>
-<li><b>lib/</b> contains the libraries files required to link with the SDK (".so" on Linux, ".dylib" on macOS and ".lib" on Windows)<ul>
-<li><b>3rdparty/</b> contains the libraries' dependencies</li>
+<li><b>deps/</b> OpenCV dependencies required by Windows SDK</li>
+<li><b>include/</b> C/C++ header files</li>
+<li><b>lib/</b> Libraries files required to link with the SDK (".so" on Linux, ".dylib" on macOS and ".lib" on Windows)<ul>
+<li><b>3rdparty/</b> Libraries dependencies</li>
 </ul>
 </li>
-<li><b>samples/</b> contains the samples' source codes about how to use SDK</li>
-<li><b>tools/</b> contains binary executables included in the SDK that help to use the MYNT EYE camera</li>
-<li><b>install.sh</b> the install script to configure the SDK ("install.bat" on Windows)</li>
-<li><b>README</b> the readme about how to get started with your MYNT EYE</li>
+<li><b>samples/</b> Samples source codes about how to use SDK</li>
+<li><b>tools/</b> MYNT EYE camera binary executables tools</li>
+<li><b>install.sh</b> Install script to configure the SDK ("install.bat" on Windows)</li>
+<li><b>README</b> Readme about how to get started with your MYNT EYE</li>
 </ul>
 <p>Please read the README file or the <a class="el" href="getting_started.html">Getting Started</a> section to get started with application development.</p>
 <h2>IMU Introduction</h2>
